@@ -586,7 +586,7 @@ GameObject:
   - component: {fileID: 167904206}
   - component: {fileID: 167904205}
   m_Layer: 0
-  m_Name: Moustings
+  m_Name: Mouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
