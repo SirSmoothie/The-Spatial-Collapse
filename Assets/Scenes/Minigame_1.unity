@@ -608,6 +608,7 @@ MonoBehaviour:
   cubetouched: 0
   TorchOn: 0
   Cube: {fileID: 0}
+  wall_health: {fileID: 1216108931}
 --- !u!4 &167904206
 Transform:
   m_ObjectHideFlags: 0
@@ -4203,6 +4204,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 139791136324827240, guid: f378cb3d952ec7f4381afee7fe4db568, type: 3}
   m_PrefabInstance: {fileID: 2879769219483961191}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1216108931 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1734409042149089123, guid: f378cb3d952ec7f4381afee7fe4db568, type: 3}
+  m_PrefabInstance: {fileID: 2879769219483961191}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82bc64f72248cad4fb5edea3d8aa4184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1235446970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 139791136324827240, guid: f378cb3d952ec7f4381afee7fe4db568, type: 3}
