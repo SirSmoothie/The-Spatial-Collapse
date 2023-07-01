@@ -11,8 +11,11 @@ public class SinewavesRed : MonoBehaviour
 
     public float xpos = 0;
     public float ypos = 0;
+<<<<<<< Updated upstream
     public float xslider = 0;
     public float yslider = 0;
+=======
+>>>>>>> Stashed changes
 
     // Start is called before the first frame update
     void Start()
