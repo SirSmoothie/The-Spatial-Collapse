@@ -8,6 +8,8 @@ public class SinewavesRed : MonoBehaviour
     public LineRenderer myLineRenderer;
     public int points;
     public float startingpoint = 0;
+    public float xpos = 0;
+    public float ypos = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +30,7 @@ public class SinewavesRed : MonoBehaviour
             float progress = (float)currentpoints/(points-1);
             float x = Mathf.Lerp(xStart,xFinish,progress);
             float y = Mathf.Sin(x+Time.timeSinceLevelLoad);
-            myLineRenderer.SetPosition(currentpoints, new Vector3(x,y,10));
+            myLineRenderer.SetPosition(currentpoints, new Vector3(x+xpos,y+ypos,10));
         }                                              
 
     }
