@@ -716,6 +716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myLineRenderer: {fileID: 1372152726}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   points: 100
   startingpoint: -12
   xpos: 0
@@ -725,6 +726,12 @@ MonoBehaviour:
 =======
   points: 10
   startingpoint: -50
+  xpos: 0
+  ypos: 0
+>>>>>>> Stashed changes
+=======
+  points: 20
+  startingpoint: -60
   xpos: 0
   ypos: 0
 >>>>>>> Stashed changes
@@ -781,11 +788,16 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         time: 0.39105988
         value: 0.40880585
 =======
         time: 0.51117325
         value: 0.24528313
+>>>>>>> Stashed changes
+=======
+        time: 0.49720764
+        value: 0.2201252
 >>>>>>> Stashed changes
         inSlope: 0
         outSlope: 0

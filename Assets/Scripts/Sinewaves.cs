@@ -12,8 +12,11 @@ public class SinewavesRed : MonoBehaviour
     public float xpos = 0;
     public float ypos = 0;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public float xslider = 0;
     public float yslider = 0;
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
