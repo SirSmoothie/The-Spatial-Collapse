@@ -34,7 +34,7 @@ public class CuttingPath : MonoBehaviour
             IsWorking = false;
         }
 
-        time =+ Time.deltaTime;
+        time = time + Time.deltaTime;
         if (pathstart == true)
         {
             if(Checkpoint0 == true)
