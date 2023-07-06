@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2465099902410295447}
   - component: {fileID: 9088364447423908242}
   - component: {fileID: 70946266235154778}
-  - component: {fileID: 146109322380816105}
   - component: {fileID: 2870800475685146119}
+  - component: {fileID: 122271806545709758}
   m_Layer: 0
   m_Name: BlueWire
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2465099902410295447
 MeshFilter:
@@ -107,19 +107,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &146109322380816105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3174580600816226011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d07e303044412474cab8b95dde9bdcac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destinationTag: Destination
 --- !u!120 &2870800475685146119
 LineRenderer:
   serializedVersion: 2
@@ -224,3 +211,16 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &122271806545709758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3174580600816226011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f3fae94212dfa418c12a456cb68293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destinationTag: WP1

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7976567669341368722}
   - component: {fileID: 8906579495470410025}
   - component: {fileID: 6680873775822567230}
-  - component: {fileID: 850639946622880494}
   - component: {fileID: 1756209946163582108}
+  - component: {fileID: 2539457530982931331}
   m_Layer: 0
   m_Name: RedWire
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7976567669341368722
 MeshFilter:
@@ -107,19 +107,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &850639946622880494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3834631606539173900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d07e303044412474cab8b95dde9bdcac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destinationTag: Destination
 --- !u!120 &1756209946163582108
 LineRenderer:
   serializedVersion: 2
@@ -224,3 +211,16 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &2539457530982931331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3834631606539173900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f3fae94212dfa418c12a456cb68293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destinationTag: WP1

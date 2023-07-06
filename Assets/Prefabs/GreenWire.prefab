@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5007997431691175088}
   - component: {fileID: 4139865165284614495}
   - component: {fileID: 321005708325652395}
-  - component: {fileID: 2532051517668740630}
   - component: {fileID: 5109161519967239867}
+  - component: {fileID: 1115461265646094347}
   m_Layer: 0
   m_Name: GreenWire
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5007997431691175088
 MeshFilter:
@@ -107,19 +107,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2532051517668740630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3897475835522382546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d07e303044412474cab8b95dde9bdcac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destinationTag: Destination
 --- !u!120 &5109161519967239867
 LineRenderer:
   serializedVersion: 2
@@ -224,3 +211,16 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1115461265646094347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3897475835522382546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f3fae94212dfa418c12a456cb68293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destinationTag: WP1
