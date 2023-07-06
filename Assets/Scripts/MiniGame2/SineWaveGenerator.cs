@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using Unity.VisualScripting;
 
-public class Frequency : MonoBehaviour
+public class SineWaveGenerator : MonoBehaviour
 {
     public LineRenderer lineRenderer;
     public int numPoints;
@@ -11,13 +13,20 @@ public class Frequency : MonoBehaviour
     public float frequency = 1f;
     public float xOffset = 0f;
     public float yOffset = 0f;
-    public Slider amplitudeSlider;
-    public Slider frequencySlider;
+
+    public float frequencyMin = 1f;
+    public float frequencyMax = 10f;
+
+    public float amplitudeMin = 1f;
+    public float amplitudeMax = 10f;
 
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = numPoints;
+
+        RandomizeFrequency();
+        RandomizeAmplitude();
     }
 
     void Update()
@@ -39,16 +48,14 @@ public class Frequency : MonoBehaviour
             lineRenderer.SetPosition(i, position);
         }
     }
-
-    public void OnAmplitudeSliderValueChanged()
+    public void RandomizeFrequency()
     {
-        amplitude = amplitudeSlider.value;
+        frequency = Random.Range(frequencyMin, frequencyMax);
         UpdateWave();
     }
-
-    public void OnFrequencySliderValueChanged()
+    public void RandomizeAmplitude()
     {
-        frequency = frequencySlider.value;
+        amplitude = Random.Range(amplitudeMin, amplitudeMax);
         UpdateWave();
     }
 }
