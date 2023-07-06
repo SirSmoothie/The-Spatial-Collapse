@@ -21,14 +21,24 @@ public class HackController : MonoBehaviour
         //{
             //print("Victory!");
         //}
+        if (WinDegree == Z)
+        {
+            print("You aligned it babe!");
+        }
+        if(Z == -360f)
+        {
+            Z = 0f;
+        }
     }
 
     public void RotatePiece(bool Rotate)
     {
         if(Rotate = true)
         {
-            transform.Rotate(X, Y, Z + 60f);
+            Z = Z + -60f;
+            transform.Rotate(X, Y, -60f);
             print(Z);
+            Rotate = false;
         }
     }
 }
