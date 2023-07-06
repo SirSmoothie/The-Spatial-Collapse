@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CuttingPath : MonoBehaviour
 {
 
+
+    public float speed = 1.0f;
+    Vector3 Offset;
+
     public float speed = 1f;
+
 
     public 
     // Start is called before the first frame update
