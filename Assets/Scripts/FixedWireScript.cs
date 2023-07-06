@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WireScript : MonoBehaviour
+public class FixedWireScript : MonoBehaviour
 {
     private LineRenderer Line;
     [SerializeField] private string destinationTag;
