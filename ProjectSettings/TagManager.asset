@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Destination
+  - WP1
+  - WP2
+  - WP3
+  - WP4
   layers:
   - Default
   - TransparentFX
