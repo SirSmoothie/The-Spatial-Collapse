@@ -18,10 +18,8 @@ public class HackMovement : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 Transform objectHit = hit.transform;
-                print(objectHit);
                 Cube = hit.transform.gameObject;
                 HitSomething = true;
-                print("Goober");
             }
         }
 
@@ -37,6 +35,5 @@ public class HackMovement : MonoBehaviour
     public void RotatePiece()
     {
         hackController.RotatePiece(true);
-        print("Goofy Ass");
     }
 }

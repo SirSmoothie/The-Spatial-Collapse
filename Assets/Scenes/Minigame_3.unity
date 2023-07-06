@@ -207,7 +207,8 @@ MonoBehaviour:
   X: 0
   Y: 0
   Z: 0
-  WinDegree: 60
+  WinDegree: -240
+  newrotation: 0
 --- !u!65 &245082690
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -331,6 +332,7 @@ MonoBehaviour:
   Y: 0
   Z: 0
   WinDegree: 60
+  newrotation: 0
 --- !u!65 &354461201
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -454,6 +456,7 @@ MonoBehaviour:
   Y: 0
   Z: 0
   WinDegree: 60
+  newrotation: 0
 --- !u!65 &522291872
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -577,6 +580,7 @@ MonoBehaviour:
   Y: 0
   Z: 0
   WinDegree: 60
+  newrotation: 0
 --- !u!65 &800359129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -886,6 +890,7 @@ MonoBehaviour:
   Y: 0
   Z: 0
   WinDegree: 60
+  newrotation: 0
 --- !u!65 &1599809234
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1009,6 +1014,7 @@ MonoBehaviour:
   Y: 0
   Z: 0
   WinDegree: 60
+  newrotation: 0
 --- !u!65 &1651473776
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1132,6 +1138,7 @@ MonoBehaviour:
   Y: 0
   Z: 0
   WinDegree: 60
+  newrotation: 0
 --- !u!65 &1769507686
 BoxCollider:
   m_ObjectHideFlags: 0
