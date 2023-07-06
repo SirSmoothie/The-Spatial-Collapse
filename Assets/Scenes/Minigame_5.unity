@@ -252,11 +252,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenWire (Right)
       objectReference: {fileID: 0}
+    - target: {fileID: 3897475835522382546, guid: 50a49158b95f125458070d66b30439f8, type: 3}
+      propertyPath: m_TagString
+      value: WP3
+      objectReference: {fileID: 0}
     - target: {fileID: 5109161519967239867, guid: 50a49158b95f125458070d66b30439f8, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1115461265646094347, guid: 50a49158b95f125458070d66b30439f8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -321,7 +326,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowWire (Right)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6409935760205406437, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
+      propertyPath: m_TagString
+      value: WP4
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2467695906750286330, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -452,6 +462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedWire (right)
       objectReference: {fileID: 0}
+    - target: {fileID: 3834631606539173900, guid: 5f941a3e6aeb6b0459453bab50dcbf37, type: 3}
+      propertyPath: m_TagString
+      value: WP1
+      objectReference: {fileID: 0}
     - target: {fileID: 8566898768414736702, guid: 5f941a3e6aeb6b0459453bab50dcbf37, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -496,7 +510,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2539457530982931331, guid: 5f941a3e6aeb6b0459453bab50dcbf37, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -561,7 +576,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueWire (Right)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3174580600816226011, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
+      propertyPath: m_TagString
+      value: WP2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 122271806545709758, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -901,6 +921,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1803079216}
     m_Modifications:
+    - target: {fileID: 1115461265646094347, guid: 50a49158b95f125458070d66b30439f8, type: 3}
+      propertyPath: destinationTag
+      value: WP3
+      objectReference: {fileID: 0}
     - target: {fileID: 2695867583059834476, guid: 50a49158b95f125458070d66b30439f8, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -949,6 +973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenWire (Left)
       objectReference: {fileID: 0}
+    - target: {fileID: 3897475835522382546, guid: 50a49158b95f125458070d66b30439f8, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -965,6 +993,10 @@ PrefabInstance:
     - target: {fileID: 3834631606539173900, guid: 5f941a3e6aeb6b0459453bab50dcbf37, type: 3}
       propertyPath: m_Name
       value: RedWire (left)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834631606539173900, guid: 5f941a3e6aeb6b0459453bab50dcbf37, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8566898768414736702, guid: 5f941a3e6aeb6b0459453bab50dcbf37, type: 3}
       propertyPath: m_RootOrder
@@ -1023,6 +1055,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1803079216}
     m_Modifications:
+    - target: {fileID: 122271806545709758, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
+      propertyPath: destinationTag
+      value: WP2
+      objectReference: {fileID: 0}
     - target: {fileID: 2561726622191679298, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1071,6 +1107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueWire (Left)
       objectReference: {fileID: 0}
+    - target: {fileID: 3174580600816226011, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1084,6 +1124,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1803079216}
     m_Modifications:
+    - target: {fileID: 2467695906750286330, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
+      propertyPath: destinationTag
+      value: WP4
+      objectReference: {fileID: 0}
     - target: {fileID: 5408050910511771099, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1131,6 +1175,10 @@ PrefabInstance:
     - target: {fileID: 6409935760205406437, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_Name
       value: YellowWire (left)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409935760205406437, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
