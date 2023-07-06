@@ -7,6 +7,8 @@ public class WireScript : MonoBehaviour
     private LineRenderer Line;
     [SerializeField] private string destinationTag;
 
+    private bool hasLost = false;
+    private bool hasWon = false;
     private Vector3 offset;
 
     private void Start()
@@ -25,8 +27,13 @@ public class WireScript : MonoBehaviour
         Line.SetPosition(1, transform.position);
     }
 
+
+
+
     private void OnMouseUp()
     {
+        if (hasLost || hasWon) return;
+
         Vector3 rayOrigin = Camera.main.transform.position;
         Vector3 rayDirection = MouseWorldPosition() - Camera.main.transform.position;
         RaycastHit hitInfo;
@@ -37,13 +44,21 @@ public class WireScript : MonoBehaviour
             {
                 Line.SetPosition(0, hitInfo.transform.position);
                 transform.gameObject.GetComponent<Collider>().enabled = false;
+                Debug.Log("You win");
+                hasWon = true;
             }
             else
             {
                 Line.SetPosition(0, hitInfo.point);
+                Debug.Log("You lose");
+                hasLost = true;
             }
         }
     }
+
+
+
+
 
     private Vector3 MouseWorldPosition()
     {
