@@ -78,7 +78,7 @@ public class CuttingPath : MonoBehaviour
             }
             if(Checkpoint3 == true)
             {
-                speed = 1;
+                speed = 1 + Time.deltaTime;
                 transform.Translate(Vector3.forward * speed * Time.deltaTime);
                 transform.Translate(Vector3.up * speed * Time.deltaTime);
                 if (time >= 4)
@@ -90,12 +90,13 @@ public class CuttingPath : MonoBehaviour
             }
             if(Checkpoint4 == true)
             {
-                speed = 2;
+                speed = 4 + Time.deltaTime;
                 transform.Translate(Vector3.forward * speed * Time.deltaTime);
-                if (time >= 4)
+                if (time >= 2)
                 {
                     print("you got to the end!");
                     Checkpoint4 = false;
+                    IsWorking = false;
                 }
             }
         }
