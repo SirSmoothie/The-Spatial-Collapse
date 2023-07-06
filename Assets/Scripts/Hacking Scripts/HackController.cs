@@ -10,6 +10,7 @@ public class HackController : MonoBehaviour
     public float Z = 0f;
     public float WinDegree = 0f;
     public bool newrotation = false;
+    public bool rotatedproperly = false;
 
     //The win degrees need to be in a multitude of -60's (0, -60, -120, -180, -240, -300)
 
@@ -31,6 +32,7 @@ public class HackController : MonoBehaviour
         {
             print("You aligned it babe!");
             newrotation = false;
+            rotatedproperly = true;
         }
         if(Z == -360f)
         {
@@ -47,6 +49,7 @@ public class HackController : MonoBehaviour
             print(Z);
             newrotation = true;
             Rotate = false;
+            rotatedproperly = false;
         }
     }
 }
