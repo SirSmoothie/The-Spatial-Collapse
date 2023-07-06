@@ -9,6 +9,12 @@ public class HackController : MonoBehaviour
     public float Y = 0f;
     public float Z = 0f;
     public float WinDegree = 0f;
+    public bool newrotation = false;
+
+    //The win degrees need to be in a multitude of -60's (0, -60, -120, -180, -240, -300)
+
+
+
 
     void Update()
     {
@@ -21,9 +27,10 @@ public class HackController : MonoBehaviour
         //{
             //print("Victory!");
         //}
-        if (WinDegree == Z)
+        if (WinDegree == Z && newrotation == true)
         {
             print("You aligned it babe!");
+            newrotation = false;
         }
         if(Z == -360f)
         {
@@ -38,6 +45,7 @@ public class HackController : MonoBehaviour
             Z = Z + -60f;
             transform.Rotate(X, Y, -60f);
             print(Z);
+            newrotation = true;
             Rotate = false;
         }
     }
