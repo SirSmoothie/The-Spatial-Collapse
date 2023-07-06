@@ -12,11 +12,15 @@ public class SineWaveGenerator : MonoBehaviour
     public float frequency = 1f;
     public float xOffset = 0f;
     public float yOffset = 0f;
-    public Slider amplitudeSlider;
-    public Slider frequencySlider;
 
-    public float frequencyMin = 1f;
+
+    public float frequencyMin = 6f;
     public float frequencyMax = 10f;
+
+    public float AmplitudeyMin = 1f;
+    public float AmplitudeMax = 3f;
+
+
 
     void Start()
     {
@@ -24,6 +28,8 @@ public class SineWaveGenerator : MonoBehaviour
         lineRenderer.positionCount = numPoints;
 
         RandomizeFrequency();
+        RandomizeAmplitude();
+
     }
 
     void Update()
@@ -46,22 +52,19 @@ public class SineWaveGenerator : MonoBehaviour
         }
     }
 
-    public void OnAmplitudeSliderValueChanged()
-    {
-        amplitude = amplitudeSlider.value;
-        UpdateWave();
-    }
 
-    public void OnFrequencySliderValueChanged()
-    {
-        frequency = frequencySlider.value;
-        UpdateWave();
-    }
 
     public void RandomizeFrequency()
     {
-        frequency = Random.Range(6, 8);
-        frequencySlider.value = frequency;
+        frequency = Random.Range(frequencyMin, frequencyMax);
         UpdateWave();
     }
+
+    public void RandomizeAmplitude()
+    {
+        amplitude = Random.Range(AmplitudeyMin, AmplitudeMax);
+        UpdateWave();
+    }
+
+
 }
