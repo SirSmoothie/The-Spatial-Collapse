@@ -16,13 +16,13 @@ public class WireScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-        offset = transform.postion - MouseWorldPostition();
+        offset = transform.position - MouseWorldPosition();
     }
 
     private void OnMouseDrag() 
     {
-        line.SetPosition(0, MouseWorldPosition() + offset);
-        line.SetPosition(1, TransformPosition);
+        Line.SetPosition(0, MouseWorldPosition() + offset);
+        Line.SetPosition(1, transform.position);
     }
 
     private void OnMouseUp()
@@ -31,12 +31,12 @@ public class WireScript : MonoBehaviour
         Vector3 RayDir = MouseWorldPosition()-Camera.main.transform.forward;
         RaycastHit hitInfo;
 
-        if(Physics.Raycast(rayorigin,RayDir, out hitInfo)) 
+        if(Physics.Raycast(rayOrigin,RayDir, out hitInfo)) 
         { 
             if(hitInfo.transform.tag == destinationTag) 
             {
-            Line.SetPosition(0,hitInfo.transform.position);
-                transform.gameObject.GetComponent<Collider>.enabled = false;
+                Line.SetPosition(0,hitInfo.transform.position);
+                transform.gameObject.GetComponent<Collider>().enabled = false;
             }
             else
             {
@@ -48,7 +48,7 @@ public class WireScript : MonoBehaviour
     private Vector3 MouseWorldPosition()
     {
         Vector3 mouseScreenPos = Input.mousePosition;
-        mouseScreenPos.z = Camera.main.WorldToScreenPoint.(transform.position).z;
+        mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
     }
 
