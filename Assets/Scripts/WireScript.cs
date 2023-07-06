@@ -7,9 +7,9 @@ public class WireScript : MonoBehaviour
     private LineRenderer Line;
     [SerializeField] private string destinationTag;
 
-    Vector3 offset;
+    private Vector3 offset;
 
-    private void start()
+    private void Start()
     {
         Line = GetComponent<LineRenderer>();
     }
@@ -19,7 +19,7 @@ public class WireScript : MonoBehaviour
         offset = transform.position - MouseWorldPosition();
     }
 
-    private void OnMouseDrag() 
+    private void OnMouseDrag()
     {
         Line.SetPosition(0, MouseWorldPosition() + offset);
         Line.SetPosition(1, transform.position);
@@ -28,29 +28,35 @@ public class WireScript : MonoBehaviour
     private void OnMouseUp()
     {
         Vector3 rayOrigin = Camera.main.transform.position;
-        Vector3 RayDir = MouseWorldPosition()-Camera.main.transform.forward;
+        Vector3 rayDirection = MouseWorldPosition() - Camera.main.transform.position;
         RaycastHit hitInfo;
+
+
+        if (Physics.Raycast(rayOrigin, rayDirection, out hitInfo))
+        {
+            if (hitInfo.transform.CompareTag(destinationTag))
+            {
+                Line.SetPosition(0, hitInfo.transform.position);
 
         if(Physics.Raycast(rayOrigin,RayDir, out hitInfo)) 
         { 
             if(hitInfo.transform.tag == destinationTag) 
             {
                 Line.SetPosition(0,hitInfo.transform.position);
+
                 transform.gameObject.GetComponent<Collider>().enabled = false;
             }
             else
             {
-                Line.SetPosition(0, hitInfo.transform.position);
+                Line.SetPosition(0, hitInfo.point);
             }
         }
     }
-    
+
     private Vector3 MouseWorldPosition()
     {
         Vector3 mouseScreenPos = Input.mousePosition;
         mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z;
         return Camera.main.ScreenToWorldPoint(mouseScreenPos);
     }
-
-
 }
