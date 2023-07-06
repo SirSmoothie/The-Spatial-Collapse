@@ -17,9 +17,9 @@ public class CuttingPath : MonoBehaviour
     public float time = 0;
     public int pathcut = 0;
     public bool IsWorking = true;
-    public void cutting(int cuttingpath)
+    public void cutting(int cuttingthepath)
     {
-        pathcut = pathcut + cuttingpath;
+        pathcut = pathcut + cuttingthepath;
     }
     void Update()
     {
