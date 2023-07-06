@@ -32,6 +32,7 @@ public class CuttingPath : MonoBehaviour
             print("You fail");
             speed = 0;
             IsWorking = false;
+            pathstart = false;
         }
 
         time = time + Time.deltaTime;
