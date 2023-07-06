@@ -31,11 +31,19 @@ public class WireScript : MonoBehaviour
         Vector3 rayDirection = MouseWorldPosition() - Camera.main.transform.position;
         RaycastHit hitInfo;
 
+
         if (Physics.Raycast(rayOrigin, rayDirection, out hitInfo))
         {
             if (hitInfo.transform.CompareTag(destinationTag))
             {
                 Line.SetPosition(0, hitInfo.transform.position);
+
+        if(Physics.Raycast(rayOrigin,RayDir, out hitInfo)) 
+        { 
+            if(hitInfo.transform.tag == destinationTag) 
+            {
+                Line.SetPosition(0,hitInfo.transform.position);
+
                 transform.gameObject.GetComponent<Collider>().enabled = false;
             }
             else
