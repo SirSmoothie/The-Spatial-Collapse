@@ -1,21 +1,23 @@
 
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MouseTracking : MonoBehaviour
 {
     public Camera camera;
-
-    public bool cubetouched = false;
+    public bool cubeTouched = false;
     public bool TorchOn = false;
-
-    
     public GameObject Cube;
-    public Wall_health wall_health;
-    // Update is called once per frame
+    public CuttingPath cuttingPath;
+    public bool FirstActivation = true;
+    public GameObject Wall;
+    //public Wall_health wall_health;
+
     void Update()
     {
         RaycastHit hit;
-
+        
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -25,6 +27,7 @@ public class MouseTracking : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             TorchOn = false;
+            cutting();
         }
 
         if (TorchOn == true)
@@ -34,27 +37,32 @@ public class MouseTracking : MonoBehaviour
             if (Physics.Raycast(ray, out hit))
             {
                 Transform objectHit = hit.transform;
-                //hit = GameObject.SetActive(false);
-                print("you fucking suck you loser get out of this area and die");
                 Cube = hit.transform.gameObject;
-                cubetouched = true;               
+                cubeTouched = true;
+                if(Cube == Wall)
+                {
+                    cutting();
+                }
+            }
+        }
+        if(cubeTouched == true)
+        {
+            if(FirstActivation == true)
+            {
+                cutting();
+                FirstActivation = false;
             }
         }
 
-        wall_health = Cube.GetComponent<Wall_health>();
-        if (cubetouched == true)
-        {
-            //Cube.SetActive(false);
-            //Health.health += -1;
-            AddDmg();
-            cubetouched = false;
-        }
-
-        
+       // wall_health = Cube.GetComponent<Wall_health>();
     }
 
-    public void AddDmg()
+    public void cutting()
     {
-        wall_health.AddDmg(1);
+        cuttingPath.cutting(1);
     }
+    //public void AddDmg()
+    //{
+    //    wall_health.AddDmg(1);
+    //}
 }
