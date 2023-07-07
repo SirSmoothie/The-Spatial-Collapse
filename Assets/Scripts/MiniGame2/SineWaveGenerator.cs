@@ -7,6 +7,7 @@ using TMPro;
 public class SineWaveGenerator : MonoBehaviour
 {
     public LineRenderer lineRenderer;
+    public Winner winner;
     public int numPoints;
     public float amplitude = 1f;
     public float frequency = 1f;
@@ -57,12 +58,14 @@ public class SineWaveGenerator : MonoBehaviour
     public void RandomizeFrequency()
     {
         frequency = Random.Range(frequencyMin, frequencyMax);
+        winner.RedFrequency(frequency);
         UpdateWave();
     }
 
     public void RandomizeAmplitude()
     {
         amplitude = Random.Range(AmplitudeyMin, AmplitudeMax);
+        winner.RedAmplitude(amplitude);
         UpdateWave();
     }
 
