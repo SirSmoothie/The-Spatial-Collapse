@@ -30,4 +30,12 @@ public class MinigameManager : MonoBehaviour
             Debug.Log("does dis scene work?");
         }
     }
+
+    public void MinigameFail(bool gameFail)
+    {
+        if(gameFail = true)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 }
