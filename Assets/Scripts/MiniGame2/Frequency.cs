@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Sinewaves : MonoBehaviour
+public class Frequency : MonoBehaviour
 {
     public LineRenderer lineRenderer;
     public int numPoints;
@@ -13,6 +14,9 @@ public class Sinewaves : MonoBehaviour
     public float yOffset = 0f;
     public Slider amplitudeSlider;
     public Slider frequencySlider;
+
+    public Winner winner;
+
 
     void Start()
     {
@@ -43,12 +47,18 @@ public class Sinewaves : MonoBehaviour
     public void OnAmplitudeSliderValueChanged()
     {
         amplitude = amplitudeSlider.value;
+
+        winner.GreenAmplitude(amplitude);
+
         UpdateWave();
     }
 
     public void OnFrequencySliderValueChanged()
     {
         frequency = frequencySlider.value;
+        winner.GreenFrequency(frequency);
+
+
         UpdateWave();
     }
 }
