@@ -8,13 +8,7 @@ public class CountdownClock : MonoBehaviour
 {
     public float timeremaining = 30f;
     public TMP_Text CountDown;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public MinigameManager minigameManager;
     void Update()
     {
         if(timeremaining >= 0.01)
@@ -27,6 +21,14 @@ public class CountdownClock : MonoBehaviour
         else
         {
             print("you fail");
+            TimerFail();
         }
+
+
+    }
+
+    public void TimerFail()
+    {
+        minigameManager.MinigameFail(true);
     }
 }

@@ -8,6 +8,9 @@ public class HackMovement : MonoBehaviour
     public HackController hackController;
     public GameObject Cube;
     public bool HitSomething;
+    public MinigameManager minigameManager;
+
+    public int AlignedPieces = 0;
     // Update is called once per frame
     void Update()
     {
@@ -30,10 +33,20 @@ public class HackMovement : MonoBehaviour
             RotatePiece();
             HitSomething = false;
         }
+
+        if(AlignedPieces >= 7)
+        {
+            minigameManager.NextMinigame(true);
+        }
     }
 
     public void RotatePiece()
     {
         hackController.RotatePiece(true);
+    }
+
+    public void AlignedAPiece(int Piece)
+    {
+        AlignedPieces += Piece;
     }
 }
