@@ -17,12 +17,17 @@ public class CuttingPath : MonoBehaviour
     public float time = 0;
     public int pathcut = 0;
     public bool IsWorking = true;
+
+    private MinigameManager minigameManager;
+    public GameObject MinigameManagerObject;
+
     public void cutting(int cuttingthepath)
     {
         pathcut = pathcut + cuttingthepath;
     }
     void Update()
     {
+        minigameManager = MinigameManagerObject.GetComponent<MinigameManager>();
         if(pathcut == 1)
         {
             pathstart = true;
@@ -97,6 +102,7 @@ public class CuttingPath : MonoBehaviour
                     print("you got to the end!");
                     Checkpoint4 = false;
                     IsWorking = false;
+                    minigameManager.NextMinigame(true);
                 }
             }
         }
