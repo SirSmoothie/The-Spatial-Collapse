@@ -10,6 +10,8 @@ public class WireScript : MonoBehaviour
     private bool hasLost = false;
     private bool hasWon = false;
     private Vector3 offset;
+    public WinnerG5 winnerG5;
+
 
     private void Start()
     {
@@ -44,13 +46,14 @@ public class WireScript : MonoBehaviour
             {
                 Line.SetPosition(0, hitInfo.transform.position);
                 transform.gameObject.GetComponent<Collider>().enabled = false;
-                Debug.Log("You win");
+                //Debug.Log("You win");
                 hasWon = true;
+                winnerG5.ConnectedAWire(1);
             }
             else
             {
                 Line.SetPosition(0, hitInfo.point);
-                Debug.Log("You lose");
+                //Debug.Log("You lose");
                 hasLost = true;
             }
         }
