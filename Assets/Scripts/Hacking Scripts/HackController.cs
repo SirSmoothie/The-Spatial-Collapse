@@ -17,12 +17,14 @@ public class HackController : MonoBehaviour
 
     //The win degrees need to be in a multitude of -60's (0, -60, -120, -180, -240, -300)
 
-
+    void Start()
+    {
+        Dealignedpostion = WinDegree - 60f;
+    }
 
 
     void Update()
     {
-        Dealignedpostion = WinDegree - 60f;
         if(Dealignedpostion == -360f)
         {
             Dealignedpostion = 0f;
