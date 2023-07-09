@@ -33,6 +33,6 @@ public class WinnerG5 : MonoBehaviour
         Wiresconnected += wireconnected;
     }
 
-
+    
 
 }

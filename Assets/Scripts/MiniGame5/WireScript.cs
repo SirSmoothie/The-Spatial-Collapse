@@ -56,7 +56,7 @@ public class WireScript : MonoBehaviour
                 Line.SetPosition(0, hitInfo.point);
                 //Debug.Log("You lose");
                 hasLost = true;
-                minigame.MinigameFail(true);
+                minigame.MinigameSoftFail(true);
 
             }
         }
