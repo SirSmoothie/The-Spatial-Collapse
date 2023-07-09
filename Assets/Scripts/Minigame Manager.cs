@@ -35,6 +35,15 @@ public class MinigameManager : MonoBehaviour
     {
         if(gameFail = true)
         {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+    }
+
+
+    public void MinigameHardFail(bool gameFail)
+    {
+        if (gameFail = true)
+        {
             SceneManager.LoadScene(0);
         }
     }
