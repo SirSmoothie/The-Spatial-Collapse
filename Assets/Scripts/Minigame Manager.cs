@@ -38,4 +38,15 @@ public class MinigameManager : MonoBehaviour
             SceneManager.LoadScene(0);
         }
     }
+
+    public void MinigameSoftFail(bool gameSoftFail)
+    {
+        if (gameSoftFail = true)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            
+        }
+
+    }
+
 }
