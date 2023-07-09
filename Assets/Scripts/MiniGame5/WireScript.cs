@@ -11,6 +11,7 @@ public class WireScript : MonoBehaviour
     private bool hasWon = false;
     private Vector3 offset;
     public WinnerG5 winnerG5;
+    public MinigameManager minigame;
 
 
     private void Start()
@@ -55,6 +56,8 @@ public class WireScript : MonoBehaviour
                 Line.SetPosition(0, hitInfo.point);
                 //Debug.Log("You lose");
                 hasLost = true;
+                minigame.MinigameFail(true);
+
             }
         }
     }

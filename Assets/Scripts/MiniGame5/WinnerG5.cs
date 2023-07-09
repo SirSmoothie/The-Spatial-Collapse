@@ -10,6 +10,7 @@ public class WinnerG5 : MonoBehaviour
 
     public int Wiresconnected = 0;
     public MinigameManager minigame;
+    public int WiresUnconnected = 0;
 
 
     // Start is called before the first frame update
@@ -31,4 +32,7 @@ public class WinnerG5 : MonoBehaviour
     {
         Wiresconnected += wireconnected;
     }
+
+
+
 }
