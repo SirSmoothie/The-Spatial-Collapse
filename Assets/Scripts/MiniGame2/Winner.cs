@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Winner : MonoBehaviour
 {
@@ -23,6 +25,8 @@ public class Winner : MonoBehaviour
     public bool amplitudeCorrect = false;
 
     public float Timer = 0;
+
+    public Slider slider;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +58,7 @@ public class Winner : MonoBehaviour
         if(frequencyCorrect == true && amplitudeCorrect == true)
         {
             Timer = Timer + Time.deltaTime;
+            slider.value = Timer;
             if(Timer >= 3)
             {
                 minigame.NextMinigame(true);
