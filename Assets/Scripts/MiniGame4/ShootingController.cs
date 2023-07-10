@@ -11,6 +11,7 @@ public class ShootingController : MonoBehaviour
     public float damage = 20f;
     public TargetController targetController;
     public FriendlyController friendlyController;
+    public Game4Controller game4Controller;
     // Update is called once per frame
     void Update()
     {
@@ -29,6 +30,7 @@ public class ShootingController : MonoBehaviour
                 {
                     // Deal damage to the enemy
                     friendlyController.FriendlyDamage(damage);
+                    game4Controller.FriendKilled(1);
                 }
 
             }  
@@ -41,6 +43,7 @@ public class ShootingController : MonoBehaviour
                 {
                     // Deal damage to the enemy
                     targetController.EnemyDamage(damage);
+                    game4Controller.EnemyKilled(1);
                 }
 
             }
