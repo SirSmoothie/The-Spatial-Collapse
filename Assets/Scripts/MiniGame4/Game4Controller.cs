@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class Game4Controller : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject[] myObjects;
 
-    // Update is called once per frame
     void Update()
     {
         
