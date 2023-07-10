@@ -40,7 +40,7 @@ public class HackController : MonoBehaviour
         //}
         if (WinDegree == Z && newrotation == true)
         {
-            print("You aligned it babe!");
+            print("Correct");
             newrotation = false;
             rotatedproperly = true;
             hackMovement.AlignedAPiece(1);
