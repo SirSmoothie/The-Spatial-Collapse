@@ -155,8 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d0961103aa83a4d80df97db925c413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FriendlyHit: 0
   Health: 0
-  shootingController: {fileID: 0}
+  shootingController: {fileID: 1079236415}
 --- !u!65 &997618707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -285,9 +286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc4374e6ded640c45a65c671817fd073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetHit: 0
+  Target: 0
   damage: 20
-  targetController: {fileID: 1764757010}
+  targetController: {fileID: 1764757015}
   friendlyController: {fileID: 997618706}
 --- !u!4 &1079236416
 Transform:
@@ -410,7 +411,6 @@ GameObject:
   - component: {fileID: 1764757013}
   - component: {fileID: 1764757012}
   - component: {fileID: 1764757011}
-  - component: {fileID: 1764757010}
   - component: {fileID: 1764757015}
   m_Layer: 0
   m_Name: EnemyCube
@@ -419,20 +419,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1764757010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764757009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90aa8948d95eeec40853796ad5ced649, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 10
-  shootingController: {fileID: 0}
 --- !u!65 &1764757011
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -531,8 +517,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90aa8948d95eeec40853796ad5ced649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyHit: 0
   Health: 0
-  shootingController: {fileID: 0}
+  shootingController: {fileID: 1079236415}
 --- !u!1 &2043030316
 GameObject:
   m_ObjectHideFlags: 0
