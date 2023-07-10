@@ -20,7 +20,7 @@ public class ShootingController : MonoBehaviour
             // Create a ray from the camera to the mouse position
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-
+            
             if (Physics.Raycast(ray, out hit))
             {
                 // Check if the raycast hit an enemy
@@ -31,21 +31,20 @@ public class ShootingController : MonoBehaviour
                     friendlyController.FriendlyDamage(damage);
                 }
 
-            }
-            if (targetController != null)   
+            }  
+            
+            if (Physics.Raycast(ray, out hit))
             {
-                if (Physics.Raycast(ray, out hit))
+                // Check if the raycast hit an enemy
+                TargetController targetController = hit.collider.GetComponent<TargetController>();
+                if (targetController != null)
                 {
-                    // Check if the raycast hit an enemy
-                    TargetController targetController = hit.collider.GetComponent<TargetController>();
-                    if (targetController != null)
-                    {
-                        // Deal damage to the enemy
-                        targetController.EnemyDamage(damage);
-                    }
-
+                    // Deal damage to the enemy
+                    targetController.EnemyDamage(damage);
                 }
+
             }
+            
 
 
         }
