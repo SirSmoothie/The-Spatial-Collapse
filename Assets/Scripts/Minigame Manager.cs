@@ -33,7 +33,7 @@ public class MinigameManager : MonoBehaviour
 
     public void MinigameFail(bool gameFail)
     {
-        if(gameFail = true)
+        if(gameFail == true)
         {
             SceneManager.LoadScene(0);
         }
@@ -41,7 +41,7 @@ public class MinigameManager : MonoBehaviour
 
     public void MinigameSoftFail(bool gameSoftFail)
     {
-        if (gameSoftFail = true)
+        if (gameSoftFail == true)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
             
