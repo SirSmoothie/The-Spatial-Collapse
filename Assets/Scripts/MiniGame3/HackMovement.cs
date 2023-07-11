@@ -7,8 +7,9 @@ public class HackMovement : MonoBehaviour
     public Camera camera;
     public HackController hackController;
     public GameObject Cube;
-    public bool HitSomething;
     public MinigameManager minigameManager;
+    public Confirmationbutton confirmationbutton;
+    public bool testvalue;
 
     public int AlignedPieces = 0;
     // Update is called once per frame
@@ -22,31 +23,31 @@ public class HackMovement : MonoBehaviour
             {
                 Transform objectHit = hit.transform;
                 Cube = hit.transform.gameObject;
-                HitSomething = true;
+                testvalue = true;
             }
         }
 
         hackController = Cube.GetComponent<HackController>();
 
-        if(HitSomething == true)
+        if (testvalue == true)
         {
-            RotatePiece();
-            HitSomething = false;
+            testvalue = false;
+            HitSomething();
         }
 
-        if(AlignedPieces >= 7)
+        if (AlignedPieces >= 7)
         {
-            minigameManager.NextMinigame(true);
+            confirmationbutton.Aligned(true);
         }
-    }
-
-    public void RotatePiece()
-    {
-        hackController.RotatePiece(true);
     }
 
     public void AlignedAPiece(int Piece)
     {
         AlignedPieces += Piece;
+    }
+
+    public void HitSomething()
+    {
+        hackController.Clicked(true);
     }
 }

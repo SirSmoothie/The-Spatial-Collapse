@@ -22,6 +22,14 @@ public class HackController : MonoBehaviour
         Dealignedpostion = WinDegree - 60f;
     }
 
+    public void Clicked(bool clicked)
+    {
+        if (clicked == true)
+        {
+            RotatePiece(true);
+            clicked = false;
+        }
+    }
 
     void Update()
     {
@@ -61,14 +69,14 @@ public class HackController : MonoBehaviour
 
     public void RotatePiece(bool Rotate)
     {
-        if(Rotate = true)
+        if(Rotate == true)
         {
             Z = Z + -60f;
             transform.Rotate(X, Y, -60f);
-            print(Z);
             newrotation = true;
             Rotate = false;
             rotatedproperly = false;
         }
+        
     }
 }
