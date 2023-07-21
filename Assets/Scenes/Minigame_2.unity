@@ -169,11 +169,11 @@ RectTransform:
   m_Father: {fileID: 933824569}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -676.11, y: 168.2}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 249.3, y: -135.4}
   m_SizeDelta: {x: 160, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &139218984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,11 +696,11 @@ RectTransform:
   m_Father: {fileID: 933824569}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -336.6, y: -78.6}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 292.9, y: 396.9}
   m_SizeDelta: {x: 160, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &613517302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -922,11 +922,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2132543325956017922, guid: 9e09a8f0280cada4cb2bffe8d4c0a049, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -17.4
+      value: -10.2
       objectReference: {fileID: 0}
     - target: {fileID: 2132543325956017922, guid: 9e09a8f0280cada4cb2bffe8d4c0a049, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -56.9
+      value: -56.900024
       objectReference: {fileID: 0}
     - target: {fileID: 2132543325956017922, guid: 9e09a8f0280cada4cb2bffe8d4c0a049, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1584,11 +1584,11 @@ RectTransform:
   m_Father: {fileID: 933824569}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 380.4, y: -79.1}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 343.8, y: 382.2}
   m_SizeDelta: {x: 160, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1359065243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,7 +1767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.03901875, g: 1, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.9620757, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
