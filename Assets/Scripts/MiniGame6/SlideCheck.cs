@@ -8,10 +8,7 @@ public class SlideCheck : MonoBehaviour
     {
         if (collider.gameObject.name == "Player")
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            //eventBus.Current.RemoveLife();
             collider.gameObject.GetComponent<CharacterSkills>().InSlideCheck = true;
-
         }
     }
 
@@ -19,10 +16,7 @@ public class SlideCheck : MonoBehaviour
     {
         if (collider.gameObject.name == "Player")
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            //eventBus.Current.RemoveLife();
             collider.gameObject.GetComponent<CharacterSkills>().InSlideCheck = false;
-
         }
     }
 }

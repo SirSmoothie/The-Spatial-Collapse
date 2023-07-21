@@ -43,6 +43,10 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetButtonDown("space"))
+        {
+            start = true;
+        }
         if(start == true)
         {
             rigidbody.velocity = new Vector3(x * speed, rigidbody.velocity.y, rigidbody.velocity.z);
