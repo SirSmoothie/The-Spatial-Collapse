@@ -8,10 +8,7 @@ public class DashCheck : MonoBehaviour
     {
         if (collider.gameObject.name == "Player")
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            //eventBus.Current.RemoveLife();
             collider.gameObject.GetComponent<CharacterSkills>().InDashCheck = true;
-
         }
     }
 
@@ -19,10 +16,7 @@ public class DashCheck : MonoBehaviour
     {
         if (collider.gameObject.name == "Player")
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            //eventBus.Current.RemoveLife();
             collider.gameObject.GetComponent<CharacterSkills>().InDashCheck = false;
-
         }
     }
 }

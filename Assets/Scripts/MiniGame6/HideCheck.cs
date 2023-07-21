@@ -8,10 +8,7 @@ public class HideCheck : MonoBehaviour
     {
         if (collider.gameObject.name == "Player")
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            //eventBus.Current.RemoveLife();
             collider.gameObject.GetComponent<CharacterSkills>().InHideCheck = true;
-
         }
     }
 
@@ -19,10 +16,7 @@ public class HideCheck : MonoBehaviour
     {
         if (collider.gameObject.name == "Player")
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            //eventBus.Current.RemoveLife();
             collider.gameObject.GetComponent<CharacterSkills>().InHideCheck = false;
-
         }
     }
 }
