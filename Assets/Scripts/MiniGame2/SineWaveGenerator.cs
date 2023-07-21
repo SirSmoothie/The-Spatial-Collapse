@@ -16,10 +16,10 @@ public class SineWaveGenerator : MonoBehaviour
 
 
     public float frequencyMin = 6f;
-    public float frequencyMax = 10f;
+    public float frequencyMax = 9f;
 
-    public float AmplitudeyMin = 1f;
-    public float AmplitudeMax = 3f;
+    public float AmplitudeyMin = 0.3f;
+    public float AmplitudeMax = 2f;
 
 
 
