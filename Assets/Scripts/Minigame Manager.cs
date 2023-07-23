@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MinigameManager : MonoBehaviour
@@ -23,6 +22,10 @@ public class MinigameManager : MonoBehaviour
         if (NextMini == true)
         {
             NextMinigame(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
         }
     }
 
