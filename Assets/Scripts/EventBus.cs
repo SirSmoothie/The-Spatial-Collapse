@@ -19,7 +19,7 @@ public class EventBus : MonoBehaviour
         } else {
             _current = this;
             DontDestroyOnLoad(gameObject);
-        }
+        } 
     }
 
     public int ReturnLives() {
