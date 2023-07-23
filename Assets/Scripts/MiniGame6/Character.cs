@@ -11,6 +11,7 @@ public class Character : MonoBehaviour
 
     public Rigidbody rigidbody;
     public CharacterSkills characterSkills;
+    public GameObject Text;
 
     public float AbilityCoolDown = 1f;
     public float AbilityCoolDownTimer = 0;
@@ -46,6 +47,7 @@ public class Character : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             start = true;
+            Text.SetActive(false);
         }
         if(start == true)
         {
