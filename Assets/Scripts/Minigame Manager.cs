@@ -47,15 +47,15 @@ public class MinigameManager : MonoBehaviour
     {
         if(gameFail == true)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
-
+    //changed it reset for now because we dont want to punish people for not being able to complete a minigame with no tutorial
     public void MinigameSoftFail(bool gameSoftFail)
     {
         if (gameSoftFail == true)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             
         }
 
