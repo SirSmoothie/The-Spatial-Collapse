@@ -605,10 +605,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 963194227}
-  cubetouched: 0
+  cubeTouched: 0
   TorchOn: 0
   Cube: {fileID: 0}
-  wall_health: {fileID: 0}
+  cuttingPath: {fileID: 0}
+  FirstActivation: 1
+  Wall: {fileID: 0}
 --- !u!4 &167904206
 Transform:
   m_ObjectHideFlags: 0

@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MinigameManager : MonoBehaviour
 {
     public int Minigame = 0;
     public bool NextMini = false;
+
+    public Animator transiton;
+
+    public float transitionTime = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +23,6 @@ public class MinigameManager : MonoBehaviour
         if (NextMini == true)
         {
             NextMinigame(true);
-            Debug.Log("does dis work?");
         }
     }
 
@@ -26,9 +30,17 @@ public class MinigameManager : MonoBehaviour
     {
         if(nextGame == true)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            Debug.Log("does dis scene work?");
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
         }
+    }
+
+    IEnumerator LoadLevel(int levelIndex)
+    {
+        transiton.SetTrigger("StartFade");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(levelIndex);
     }
 
     public void MinigameFail(bool gameFail)
@@ -49,4 +61,19 @@ public class MinigameManager : MonoBehaviour
 
     }
 
+    public void CreditsStart(bool RunCredits)
+    {
+        if(RunCredits == true)
+        {
+            SceneManager.LoadScene("Credits");
+        }
+    }
+
+    public void Exit(bool quiting)
+    {
+        if (quiting == true)
+        {
+            Application.Quit();
+        }
+    }
 }
