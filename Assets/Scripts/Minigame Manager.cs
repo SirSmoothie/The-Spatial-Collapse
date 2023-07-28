@@ -63,7 +63,14 @@ public class MinigameManager : MonoBehaviour
         }
 
     }
-
+    
+    public void MainMenu(bool GoToMainMenu)
+    {
+        if(GoToMainMenu == true)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
     public void CreditsStart(bool RunCredits)
     {
         if(RunCredits == true)
