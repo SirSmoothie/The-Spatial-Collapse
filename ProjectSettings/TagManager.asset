@@ -11,6 +11,7 @@ TagManager:
   - WP4
   - WP5
   - WP6
+  - MinigameManager
   layers:
   - Default
   - TransparentFX

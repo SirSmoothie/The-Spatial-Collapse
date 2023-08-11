@@ -14,11 +14,17 @@ public class CharacterSkills : MonoBehaviour
     public bool IsHiding = false;
     public bool IsJumping = false;
 
-    public MinigameManager minigamemanager;
-    // Start is called before the first frame update
-    void Start()
+    public MinigameManager minigameManagerScript;
+    public GameObject MinigameManager;
+
+    private void Start()
     {
-        minigamemanager = GetComponent<MinigameManager>();
+        if (minigameManagerScript == null)
+        {
+            MinigameManager = GameObject.Find("MinigameManager");
+            MinigameManager.GetComponent<MinigameManager>();
+            minigameManagerScript = MinigameManager.GetComponent<MinigameManager>();
+        }
     }
 
     // Update is called once per frame
@@ -32,7 +38,7 @@ public class CharacterSkills : MonoBehaviour
             }
             else
             {
-                minigamemanager.MinigameFail(true);
+                minigameManagerScript.MinigameFail(true);
             }
         }
         if(InSlideCheck == true)
@@ -43,7 +49,7 @@ public class CharacterSkills : MonoBehaviour
             }
             else
             {
-                minigamemanager.MinigameFail(true);
+                minigameManagerScript.MinigameFail(true);
             }
         }
         if(InHideCheck == true)
@@ -54,7 +60,7 @@ public class CharacterSkills : MonoBehaviour
             }
             else
             {
-                minigamemanager.MinigameFail(true);
+                minigameManagerScript.MinigameFail(true);
             }
         }
         if(InJumpCheck == true)
@@ -65,7 +71,7 @@ public class CharacterSkills : MonoBehaviour
             }
             else
             {
-                minigamemanager.MinigameFail(true);
+                minigameManagerScript.MinigameFail(true);
             }
         }
     }

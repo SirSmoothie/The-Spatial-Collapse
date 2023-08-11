@@ -2,18 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 public class MinigameManager : MonoBehaviour
 {
     public int Minigame = 0;
     public bool NextMini = false;
-
     public Animator transiton;
-
     public float transitionTime = 1f;
+    private static MinigameManager _current;
+    public static MinigameManager Current { get { return _current; } }
+    private int privateLives = 3;
+
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        if (_current != null && _current != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _current = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     // Update is called once per frame
@@ -50,7 +61,7 @@ public class MinigameManager : MonoBehaviour
     {
         if(gameFail == true)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("MainMenu");
         }
     }
     //changed it reset for now because we dont want to punish people for not being able to complete a minigame with no tutorial
