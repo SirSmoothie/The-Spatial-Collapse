@@ -44,7 +44,7 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("enter"))
         {
             start = true;
             Text.SetActive(false);
