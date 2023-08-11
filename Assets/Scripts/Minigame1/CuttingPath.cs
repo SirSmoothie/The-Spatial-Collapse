@@ -18,16 +18,24 @@ public class CuttingPath : MonoBehaviour
     public int pathcut = 0;
     public bool IsWorking = true;
 
-    private MinigameManager minigameManager;
-    public GameObject MinigameManagerObject;
+    public MinigameManager minigameManagerScript;
+    public GameObject MinigameManager;
 
+    private void Start()
+    {
+        if (minigameManagerScript == null)
+        {
+            MinigameManager = GameObject.Find("MinigameManager");
+            MinigameManager.GetComponent<MinigameManager>();
+            minigameManagerScript = MinigameManager.GetComponent<MinigameManager>();
+        }
+    }
     public void cutting(int cuttingthepath)
     {
         pathcut = pathcut + cuttingthepath;
     }
     void Update()
     {
-        minigameManager = MinigameManagerObject.GetComponent<MinigameManager>();
         if(pathcut == 1)
         {
             pathstart = true;
@@ -38,7 +46,7 @@ public class CuttingPath : MonoBehaviour
             speed = 0;
             IsWorking = false;
             pathstart = false;
-            minigameManager.MinigameFail(true);
+            minigameManagerScript.MinigameFail(true);
         }
 
         time = time + Time.deltaTime;
@@ -103,7 +111,7 @@ public class CuttingPath : MonoBehaviour
                     print("you got to the end!");
                     Checkpoint4 = false;
                     IsWorking = false;
-                    minigameManager.NextMinigame(true);
+                    minigameManagerScript.NextMinigame(true);
                 }
             }
         }

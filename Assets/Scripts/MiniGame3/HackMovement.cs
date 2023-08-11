@@ -7,11 +7,12 @@ public class HackMovement : MonoBehaviour
     public Camera camera;
     public HackController hackController;
     public GameObject Cube;
-    public MinigameManager minigameManager;
     public Confirmationbutton confirmationbutton;
     public bool testvalue;
 
     public int AlignedPieces = 0;
+
+
     // Update is called once per frame
     void Update()
     {

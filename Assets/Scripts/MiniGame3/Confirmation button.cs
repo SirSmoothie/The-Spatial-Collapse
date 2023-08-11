@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Confirmationbutton : MonoBehaviour
 {
-    public MinigameManager minigameManager;
     public bool TestingAligned = false;
     public bool Solved = false;
     public Renderer renderer;
@@ -16,9 +15,19 @@ public class Confirmationbutton : MonoBehaviour
     public bool tested;
     public bool pressed;
     // Start is called before the first frame update
-    void Start()
+
+    public MinigameManager minigameManagerScript;
+    public GameObject MinigameManager;
+
+    private void Start()
     {
         renderer = gameObject.GetComponent<Renderer>();
+        if (minigameManagerScript == null)
+        {
+            MinigameManager = GameObject.Find("MinigameManager");
+            MinigameManager.GetComponent<MinigameManager>();
+            minigameManagerScript = MinigameManager.GetComponent<MinigameManager>();
+        }
     }
 
     // Update is called once per frame
@@ -64,7 +73,7 @@ public class Confirmationbutton : MonoBehaviour
             Timer2 = Timer2 + Time.deltaTime;
             if (Timer2 >= 1)
             {
-                minigameManager.NextMinigame(true);
+                minigameManagerScript.NextMinigame(true);
             }
         }
         if (SetTimer2 == true)
