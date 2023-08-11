@@ -180,6 +180,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6399700344648496205, guid: 1ae9bcc438d3269408c83722bbce1d73, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399700344648496205, guid: 1ae9bcc438d3269408c83722bbce1d73, type: 3}
       propertyPath: transiton
       value: 
       objectReference: {fileID: 1933249598}
@@ -619,6 +623,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1933249597}
     m_Modifications:
+    - target: {fileID: 1635358247570495650, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1635358247570495650, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_RaycastTarget
       value: 1
