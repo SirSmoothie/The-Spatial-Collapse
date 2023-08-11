@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &47260864 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1492553725875394342, guid: 1ae9bcc438d3269408c83722bbce1d73, type: 3}
-  m_PrefabInstance: {fileID: 2866154153043895955}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &49440721
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,8 +218,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 816922091}
   - {fileID: 911594433}
+  - {fileID: 816922091}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -440,7 +435,8 @@ MonoBehaviour:
   time: 0
   pathcut: 0
   IsWorking: 1
-  MinigameManagerObject: {fileID: 47260864}
+  minigameManagerScript: {fileID: 0}
+  MinigameManager: {fileID: 0}
 --- !u!65 &546284770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -541,7 +537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2954095438874745001, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6549693685100812058, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_Pivot.x

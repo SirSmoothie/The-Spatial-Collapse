@@ -317,7 +317,6 @@ MonoBehaviour:
   camera: {fileID: 1400269056}
   hackController: {fileID: 0}
   Cube: {fileID: 0}
-  minigameManager: {fileID: 1914107280}
   confirmationbutton: {fileID: 1564079206}
   testvalue: 0
   AlignedPieces: 0
@@ -1521,7 +1520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2af698af7fa46da4ab950b270bfa39ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minigameManager: {fileID: 1914107280}
   TestingAligned: 0
   Solved: 0
   renderer: {fileID: 1564079203}
@@ -1531,6 +1529,8 @@ MonoBehaviour:
   greenTimer: 0
   tested: 0
   pressed: 0
+  minigameManagerScript: {fileID: 0}
+  MinigameManager: {fileID: 0}
 --- !u!1 &1579297546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,17 +1727,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f2514c0bad1d0749bd81ebbe4ead54f, type: 3}
---- !u!114 &1914107280 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6399700344648496205, guid: 1ae9bcc438d3269408c83722bbce1d73, type: 3}
-  m_PrefabInstance: {fileID: 22907803}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d2c068191772f242afa58f1892ed245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1933249593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,8 +1822,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 670318181}
   - {fileID: 1116661784}
+  - {fileID: 670318181}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

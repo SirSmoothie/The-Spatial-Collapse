@@ -9,22 +9,26 @@ public class WinnerG5 : MonoBehaviour
 
 
     public int Wiresconnected = 0;
-    public MinigameManager minigame;
     public int WiresUnconnected = 0;
 
+    public MinigameManager minigameManagerScript;
+    public GameObject MinigameManager;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        if (minigameManagerScript == null)
+        {
+            MinigameManager = GameObject.Find("MinigameManager");
+            MinigameManager.GetComponent<MinigameManager>();
+            minigameManagerScript = MinigameManager.GetComponent<MinigameManager>();
+        }
     }
-
     // Update is called once per frame
     void Update()
     {
         if(Wiresconnected >= 6)
         {
-            minigame.NextMinigame(true);
+            minigameManagerScript.NextMinigame(true);
         }
     }
 

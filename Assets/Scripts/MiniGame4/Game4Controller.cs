@@ -4,20 +4,31 @@ using UnityEngine;
 
 public class Game4Controller : MonoBehaviour
 {
-    public MinigameManager minigameManager;
     public ShootingController shootingController;
     public int enemyKilled = 0;
     public int friendKilled = 0;
-    
+
+    public MinigameManager minigameManagerScript;
+    public GameObject MinigameManager;
+
+    private void Start()
+    {
+        if (minigameManagerScript == null)
+        {
+            MinigameManager = GameObject.Find("MinigameManager");
+            MinigameManager.GetComponent<MinigameManager>();
+            minigameManagerScript = MinigameManager.GetComponent<MinigameManager>();
+        }
+    }
     void Update()
     {
         if (enemyKilled >= 10)
         {
-            minigameManager.NextMinigame(true);
+            minigameManagerScript.NextMinigame(true);
         }
         if (friendKilled >= 2)
         {
-            minigameManager.MinigameSoftFail(true);
+            minigameManagerScript.MinigameSoftFail(true);
         }
     }
 

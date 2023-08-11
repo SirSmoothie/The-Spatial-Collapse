@@ -18,8 +18,6 @@ public class Winner : MonoBehaviour
     public float greenFrequency;
     public float greenAmplitude;
 
-    public MinigameManager minigame;
-
 
     public bool frequencyCorrect = false;
     public bool amplitudeCorrect = false;
@@ -28,10 +26,17 @@ public class Winner : MonoBehaviour
 
     public Slider slider;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    public MinigameManager minigameManagerScript;
+    public GameObject MinigameManager;
 
+    private void Start()
+    {
+        if (minigameManagerScript == null)
+        {
+            MinigameManager = GameObject.Find("MinigameManager");
+            MinigameManager.GetComponent<MinigameManager>();
+            minigameManagerScript = MinigameManager.GetComponent<MinigameManager>();
+        }
     }
 
     // Update is called once per frame
@@ -61,7 +66,7 @@ public class Winner : MonoBehaviour
             slider.value = Timer;
             if(Timer >= 3)
             {
-                minigame.NextMinigame(true);
+                minigameManagerScript.NextMinigame(true);
             }
         }
         else
