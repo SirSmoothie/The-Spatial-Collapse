@@ -39,6 +39,6 @@ public class CountdownClock : MonoBehaviour
 
     public void TimerFail()
     {
-        minigameManager.MinigameFail(true);
+        minigameManager.MinigameSoftFail(true);
     }
 }

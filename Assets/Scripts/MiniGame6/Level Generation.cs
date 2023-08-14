@@ -12,7 +12,7 @@ public class LevelGeneration : MonoBehaviour
     public Transform End;
     public Vector3 _spawnPosition;
     public Vector3 _nextSpawnPosition;
-    public bool MustBeFloor = true;
+    public int MustBeFloor;
     public int GeneratedNumber;
     public int NumberOfPlatforms;
 
@@ -24,11 +24,10 @@ public class LevelGeneration : MonoBehaviour
     {
         if (NumberOfPlatforms >= 1)
         {
-            if (MustBeFloor == true)
+            if (MustBeFloor >= 1)
             {
                 _spawnPosition = _spawnPosition + _nextSpawnPosition;
-                MustBeFloor = false;
-                NumberOfPlatforms = NumberOfPlatforms - 1;
+                MustBeFloor--;
                 SpawnFloor();
             }
             else
@@ -37,35 +36,35 @@ public class LevelGeneration : MonoBehaviour
                 if (GeneratedNumber == 1)
                 {
                     _spawnPosition = _spawnPosition + _nextSpawnPosition;
-                    MustBeFloor = true;
+                    MustBeFloor++;
                     NumberOfPlatforms = NumberOfPlatforms - 1;
                     SpawnFloor();
                 }
                 if (GeneratedNumber == 2)
                 {
                     _spawnPosition = _spawnPosition + _nextSpawnPosition;
-                    MustBeFloor = true;
+                    MustBeFloor++;
                     NumberOfPlatforms = NumberOfPlatforms - 1;
                     SpawnSlide();
                 }
                 if (GeneratedNumber == 3)
                 {
                     _spawnPosition = _spawnPosition + _nextSpawnPosition;
-                    MustBeFloor = true;
+                    MustBeFloor++;
                     NumberOfPlatforms = NumberOfPlatforms - 1;
                     SpawnJump();
                 }
                 if (GeneratedNumber == 4)
                 {
                     _spawnPosition = _spawnPosition + _nextSpawnPosition;
-                    MustBeFloor = true;
+                    MustBeFloor++;
                     NumberOfPlatforms = NumberOfPlatforms - 1;
                     SpawnHide();
                 }
                 if (GeneratedNumber == 5)
                 {
                     _spawnPosition = _spawnPosition + _nextSpawnPosition;
-                    MustBeFloor = true;
+                    MustBeFloor++;
                     NumberOfPlatforms = NumberOfPlatforms - 1;
                     SpawnDash();
                 }

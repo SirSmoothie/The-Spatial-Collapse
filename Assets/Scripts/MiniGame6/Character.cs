@@ -6,8 +6,9 @@ public class Character : MonoBehaviour
 {
     public float x = 1f;
     public float speed = 1f;
+    public float AccelerationFactor = 1f;
 
-    public bool start = false;
+    public bool start = true;
 
     public Rigidbody rigidbody;
     public CharacterSkills characterSkills;
@@ -44,11 +45,6 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("enter"))
-        {
-            start = true;
-            Text.SetActive(false);
-        }
         if(start == true)
         {
             rigidbody.velocity = new Vector3(x * speed, rigidbody.velocity.y, rigidbody.velocity.z);
@@ -87,5 +83,11 @@ public class Character : MonoBehaviour
             Hiding(false);
             Sliding(false);
         }
+        
+    }
+
+    private void FixedUpdate()
+    {
+        speed = speed + AccelerationFactor;
     }
 }
