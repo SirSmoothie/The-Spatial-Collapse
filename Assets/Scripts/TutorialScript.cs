@@ -5,18 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class TutorialScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public MinigameManager minigameManager;
 
     // Update is called once per frame
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            LoadSceneInBuildSettings();
+            minigameManager.NextMinigame(true);
         }
 
     }
@@ -30,5 +26,7 @@ public class TutorialScript : MonoBehaviour
             
         
     }
+    // Note from Rory I dont understand why you had this 'LoacSceneInBuildSettings', changing the Tutorial skip to activate the next minigame in the minigame manager so the 
+    // fade to black, fades to black and vice versa.
 
 }

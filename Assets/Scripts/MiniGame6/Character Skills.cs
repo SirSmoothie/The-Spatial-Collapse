@@ -34,44 +34,48 @@ public class CharacterSkills : MonoBehaviour
         {
             if(IsDashing == true)
             {
-                Debug.Log("DASHING!!!!!!!");
+                Debug.Log("DASHING");
             }
             else
             {
-                minigameManagerScript.MinigameFail(true);
+                gameObject.GetComponent<Character>().start = false;
+                minigameManagerScript.MinigameSoftFail(true);
             }
         }
         if(InSlideCheck == true)
         {
             if (IsSliding == true)
             {
-                Debug.Log("DASHING1111111");
+                Debug.Log("SLIDING");
             }
             else
             {
-                minigameManagerScript.MinigameFail(true);
+                gameObject.GetComponent<Character>().start = false;
+                minigameManagerScript.MinigameSoftFail(true);
             }
         }
         if(InHideCheck == true)
         {
             if (IsHiding == true)
             {
-                Debug.Log("DASHING222222222222");
+                Debug.Log("HIDING");
             }
             else
             {
-                minigameManagerScript.MinigameFail(true);
+                gameObject.GetComponent<Character>().start = false;
+                minigameManagerScript.MinigameSoftFail(true);
             }
         }
         if(InJumpCheck == true)
         {
             if(IsJumping == true)
             {
-                Debug.Log("DASHING3333333333");
+                Debug.Log("JUMPING");
             }
             else
             {
-                minigameManagerScript.MinigameFail(true);
+                gameObject.GetComponent<Character>().start = false;
+                minigameManagerScript.MinigameSoftFail(true);
             }
         }
     }

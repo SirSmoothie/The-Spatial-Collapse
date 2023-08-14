@@ -46,7 +46,7 @@ public class CuttingPath : MonoBehaviour
             speed = 0;
             IsWorking = false;
             pathstart = false;
-            minigameManagerScript.MinigameFail(true);
+            minigameManagerScript.MinigameSoftFail(true);
         }
 
         time = time + Time.deltaTime;

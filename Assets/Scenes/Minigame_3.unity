@@ -624,7 +624,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1635358247570495650, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1635358247570495650, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_RaycastTarget

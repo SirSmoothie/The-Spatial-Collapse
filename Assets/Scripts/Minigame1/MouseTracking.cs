@@ -12,6 +12,7 @@ public class MouseTracking : MonoBehaviour
     public CuttingPath cuttingPath;
     public bool FirstActivation = true;
     public GameObject Wall;
+    public GameObject TorchingCube;
     //public Wall_health wall_health;
 
     void Update()
@@ -38,8 +39,11 @@ public class MouseTracking : MonoBehaviour
             {
                 Transform objectHit = hit.transform;
                 Cube = hit.transform.gameObject;
-                cubeTouched = true;
-                if(Cube == Wall)
+                if (Cube == TorchingCube)
+                {
+                    cubeTouched = true;
+                }
+                if (Cube == Wall && FirstActivation == false)
                 {
                     cutting();
                 }
@@ -54,12 +58,16 @@ public class MouseTracking : MonoBehaviour
             }
         }
 
+        
        // wall_health = Cube.GetComponent<Wall_health>();
     }
 
     public void cutting()
     {
-        cuttingPath.cutting(1);
+        if(cubeTouched == true)
+        {
+            cuttingPath.cutting(1);
+        }
     }
     //public void AddDmg()
     //{

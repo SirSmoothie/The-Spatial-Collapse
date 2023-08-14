@@ -14,31 +14,18 @@ public class MinigameManager : MonoBehaviour
     private int privateLives = 3;
 
     // Start is called before the first frame update
-    private void Awake()
-    {
-        if (_current != null && _current != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            _current = this;
-            DontDestroyOnLoad(gameObject);
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (NextMini == true)
-        {
-            NextMinigame(true);
-        }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(0);
-        }
-    }
+    //private void Awake()
+   // {
+    //    if (_current != null && _current != this)
+      //  {
+        //    Destroy(this.gameObject);
+        //}
+       // else
+     //   {
+     //       _current = this;
+     //       DontDestroyOnLoad(gameObject);
+     //   }
+   // }
 
     public void NextMinigame(bool nextGame)
     {
@@ -57,20 +44,12 @@ public class MinigameManager : MonoBehaviour
         SceneManager.LoadScene(levelIndex);
     }
 
-    public void MinigameFail(bool gameFail)
-    {
-        if(gameFail == true)
-        {
-            SceneManager.LoadScene("MainMenu");
-        }
-    }
     //changed it reset for now because we dont want to punish people for not being able to complete a minigame with no tutorial
     public void MinigameSoftFail(bool gameSoftFail)
     {
         if (gameSoftFail == true)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
         }
 
     }
@@ -79,14 +58,14 @@ public class MinigameManager : MonoBehaviour
     {
         if(GoToMainMenu == true)
         {
-            SceneManager.LoadScene("MainMenu");
+            StartCoroutine(LoadLevel(0));
         }
     }
     public void CreditsStart(bool RunCredits)
     {
         if(RunCredits == true)
         {
-            SceneManager.LoadScene("Credits");
+            StartCoroutine(LoadLevel(13));
         }
     }
 
