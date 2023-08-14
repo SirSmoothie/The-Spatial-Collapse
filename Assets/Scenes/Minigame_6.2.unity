@@ -201,7 +201,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1635358247570495650, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2954095438874745001, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_Name
@@ -561,7 +561,7 @@ MonoBehaviour:
   _nextSpawnPosition: {x: 4, y: 0, z: 0}
   MustBeFloor: 10
   GeneratedNumber: 0
-  NumberOfPlatforms: 50
+  NumberOfPlatforms: 3
 --- !u!4 &1799323704
 Transform:
   m_ObjectHideFlags: 0
