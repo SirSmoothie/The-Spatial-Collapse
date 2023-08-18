@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CountdownClock : MonoBehaviour
 {
-    public float timeremaining = 30f;
+    public float timeremaining = 10f;
     public TMP_Text CountDown;
     public MinigameManager minigameManager;
     public GameObject SliderRed;
