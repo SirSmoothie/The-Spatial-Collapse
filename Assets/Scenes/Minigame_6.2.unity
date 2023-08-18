@@ -555,13 +555,13 @@ MonoBehaviour:
   Slide: {fileID: 2638027737812680762, guid: c3a846502466df74d8a907dbb6b464f4, type: 3}
   Jump: {fileID: 7353738395996938758, guid: b8b6e9908662e484dafa6322bd347079, type: 3}
   Hide: {fileID: 6011195065514575063, guid: b20e9cbac491d214081b6c8be5beb50d, type: 3}
-  Dash: {fileID: 1899132894339994184, guid: 3e759399832b80941a8a4c08f2c277f3, type: 3}
+  Dash: {fileID: 2040174981428834268, guid: 50b0f088f88104346b36733793350182, type: 3}
   End: {fileID: 8843601927798883633, guid: 735251e828a36af4bb10282422131cb6, type: 3}
   _spawnPosition: {x: 0, y: 0, z: 0}
   _nextSpawnPosition: {x: 4, y: 0, z: 0}
   MustBeFloor: 10
   GeneratedNumber: 0
-  NumberOfPlatforms: 3
+  NumberOfPlatforms: 20
 --- !u!4 &1799323704
 Transform:
   m_ObjectHideFlags: 0
