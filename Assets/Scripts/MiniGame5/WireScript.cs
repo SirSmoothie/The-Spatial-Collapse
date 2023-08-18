@@ -12,6 +12,9 @@ public class WireScript : MonoBehaviour
     private Vector3 offset;
     public WinnerG5 winnerG5;
     public MinigameManager minigame;
+    public AudioSource audioSource; 
+    public AudioClip lostSound; 
+
 
 
     private void Start()
@@ -58,6 +61,13 @@ public class WireScript : MonoBehaviour
                 hasLost = true;
                 minigame.MinigameSoftFail(true);
 
+                // Play the lost sound
+                if (audioSource != null && lostSound != null)
+                {
+                    audioSource.clip = lostSound;
+                    audioSource.Play();
+
+                }
             }
         }
     }
