@@ -181,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3174580600816226011, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
       propertyPath: m_Name
-      value: LightestRed(Right)
+      value: Orange(Right)
       objectReference: {fileID: 0}
     - target: {fileID: 3174580600816226011, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
       propertyPath: m_TagString
@@ -190,7 +190,7 @@ PrefabInstance:
     - target: {fileID: 9088364447423908242, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e44fee75f820c77408ac0a7c2a571c99, type: 2}
+      objectReference: {fileID: 2100000, guid: 47e587d9b57d4c1449b862de9fd88403, type: 2}
     m_RemovedComponents:
     - {fileID: 122271806545709758, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
     m_RemovedGameObjects: []
@@ -338,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409935760205406437, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_Name
-      value: DarkestRed(Right)
+      value: Blue(Right)
       objectReference: {fileID: 0}
     - target: {fileID: 6409935760205406437, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_TagString
@@ -347,7 +347,7 @@ PrefabInstance:
     - target: {fileID: 7233967787881691896, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 88b1b3d2df1761d40b6bef6a18baba0f, type: 2}
+      objectReference: {fileID: 2100000, guid: f8f6359876391fd48a60d9e129513d61, type: 2}
     m_RemovedComponents:
     - {fileID: 2467695906750286330, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
     m_RemovedGameObjects: []
@@ -483,6 +483,10 @@ PrefabInstance:
     - target: {fileID: 2954095438874745001, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_Name
       value: Image
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954095438874745001, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6549693685100812058, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_Pivot.x
@@ -710,7 +714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3174580600816226011, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
       propertyPath: m_Name
-      value: DarkRed(Right)
+      value: Yellow(Right)
       objectReference: {fileID: 0}
     - target: {fileID: 3174580600816226011, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
       propertyPath: m_TagString
@@ -719,7 +723,7 @@ PrefabInstance:
     - target: {fileID: 9088364447423908242, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 13a87a3d70b2847448c44f370f44dec2, type: 2}
+      objectReference: {fileID: 2100000, guid: d0c026f208d837f4f96e7f292408d66c, type: 2}
     m_RemovedComponents:
     - {fileID: 122271806545709758, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
     m_RemovedGameObjects: []
@@ -762,7 +766,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1113,7 +1117,7 @@ PrefabInstance:
     - target: {fileID: 1581227441917998236, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 92a8fe9e231d3604a967c6b4f4fc80e3, type: 2}
+      objectReference: {fileID: 2100000, guid: ccc19365456d42f43a07827f284d80ba, type: 2}
     - target: {fileID: 2467695906750286330, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: minigame
       value: 
@@ -1172,7 +1176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409935760205406437, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_Name
-      value: LightRed(Left)
+      value: Purple(Left)
       objectReference: {fileID: 0}
     - target: {fileID: 6409935760205406437, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_TagString
@@ -1181,7 +1185,7 @@ PrefabInstance:
     - target: {fileID: 7233967787881691896, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 92a8fe9e231d3604a967c6b4f4fc80e3, type: 2}
+      objectReference: {fileID: 2100000, guid: ccc19365456d42f43a07827f284d80ba, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1287,7 +1291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409935760205406437, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_Name
-      value: LightRed(Right)
+      value: Purple(Right)
       objectReference: {fileID: 0}
     - target: {fileID: 6409935760205406437, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_TagString
@@ -1296,7 +1300,7 @@ PrefabInstance:
     - target: {fileID: 7233967787881691896, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 92a8fe9e231d3604a967c6b4f4fc80e3, type: 2}
+      objectReference: {fileID: 2100000, guid: ccc19365456d42f43a07827f284d80ba, type: 2}
     m_RemovedComponents:
     - {fileID: 2467695906750286330, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
     m_RemovedGameObjects: []
@@ -1338,8 +1342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Wiresconnected: 0
-  minigame: {fileID: 538510898}
   WiresUnconnected: 0
+  minigameManagerScript: {fileID: 0}
+  MinigameManager: {fileID: 0}
 --- !u!4 &1649861708
 Transform:
   m_ObjectHideFlags: 0
@@ -1366,7 +1371,7 @@ PrefabInstance:
     - target: {fileID: 1756209946163582108, guid: 5f941a3e6aeb6b0459453bab50dcbf37, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e44fee75f820c77408ac0a7c2a571c99, type: 2}
+      objectReference: {fileID: 2100000, guid: 47e587d9b57d4c1449b862de9fd88403, type: 2}
     - target: {fileID: 2539457530982931331, guid: 5f941a3e6aeb6b0459453bab50dcbf37, type: 3}
       propertyPath: minigame
       value: 
@@ -1381,7 +1386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3834631606539173900, guid: 5f941a3e6aeb6b0459453bab50dcbf37, type: 3}
       propertyPath: m_Name
-      value: LightestRed(Left)
+      value: orange(Left)
       objectReference: {fileID: 0}
     - target: {fileID: 3834631606539173900, guid: 5f941a3e6aeb6b0459453bab50dcbf37, type: 3}
       propertyPath: m_TagString
@@ -1446,7 +1451,7 @@ PrefabInstance:
     - target: {fileID: 8906579495470410025, guid: 5f941a3e6aeb6b0459453bab50dcbf37, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e44fee75f820c77408ac0a7c2a571c99, type: 2}
+      objectReference: {fileID: 2100000, guid: 47e587d9b57d4c1449b862de9fd88403, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2128,10 +2133,10 @@ PrefabInstance:
     - target: {fileID: 2870800475685146119, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 13a87a3d70b2847448c44f370f44dec2, type: 2}
+      objectReference: {fileID: 2100000, guid: d0c026f208d837f4f96e7f292408d66c, type: 2}
     - target: {fileID: 3174580600816226011, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
       propertyPath: m_Name
-      value: DarkRed(Left)
+      value: Yellow(Left)
       objectReference: {fileID: 0}
     - target: {fileID: 3174580600816226011, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
       propertyPath: m_TagString
@@ -2140,7 +2145,7 @@ PrefabInstance:
     - target: {fileID: 9088364447423908242, guid: 4303f21498420d14d8eba04ce2eab0ab, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 13a87a3d70b2847448c44f370f44dec2, type: 2}
+      objectReference: {fileID: 2100000, guid: d0c026f208d837f4f96e7f292408d66c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2157,7 +2162,7 @@ PrefabInstance:
     - target: {fileID: 1581227441917998236, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 88b1b3d2df1761d40b6bef6a18baba0f, type: 2}
+      objectReference: {fileID: 2100000, guid: f8f6359876391fd48a60d9e129513d61, type: 2}
     - target: {fileID: 2467695906750286330, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: minigame
       value: 
@@ -2216,7 +2221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409935760205406437, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_Name
-      value: DarkestRed(Left)
+      value: Blue(Left)
       objectReference: {fileID: 0}
     - target: {fileID: 6409935760205406437, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_TagString
@@ -2225,7 +2230,7 @@ PrefabInstance:
     - target: {fileID: 7233967787881691896, guid: e0678fb1f69660e4b94e41affbbe9691, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 88b1b3d2df1761d40b6bef6a18baba0f, type: 2}
+      objectReference: {fileID: 2100000, guid: f8f6359876391fd48a60d9e129513d61, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
