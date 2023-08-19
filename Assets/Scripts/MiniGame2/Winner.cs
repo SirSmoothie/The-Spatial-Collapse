@@ -8,6 +8,8 @@ using TMPro;
 public class Winner : MonoBehaviour
 {
 
+    public AudioClip audioClip;
+    public AudioSource audioSource;
 
     public Frequency frequencygreen;
     public SineWaveGenerator Sinewavered;
@@ -26,8 +28,8 @@ public class Winner : MonoBehaviour
 
     public Slider slider;
 
-    public MinigameManager minigameManagerScript;
-    public GameObject MinigameManager;
+    private MinigameManager minigameManagerScript;
+    private GameObject MinigameManager;
 
     private void Start()
     {
@@ -64,7 +66,9 @@ public class Winner : MonoBehaviour
         {
             Timer = Timer + Time.deltaTime;
             slider.value = Timer;
-            if(Timer >= 3)
+            audioSource.clip = audioClip;
+            audioSource.Play();
+            if (Timer >= 3)
             {
                 minigameManagerScript.NextMinigame(true);
             }
