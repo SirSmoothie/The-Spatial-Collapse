@@ -524,7 +524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2954095438874745001, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6549693685100812058, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_Pivot.x
@@ -1111,7 +1111,7 @@ GameObject:
   - component: {fileID: 927856792}
   - component: {fileID: 927856793}
   m_Layer: 0
-  m_Name: Explosion
+  m_Name: ErrorSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1145,8 +1145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 927856793}
-  countdownDuration: 11
-  audioClip: {fileID: 8300000, guid: d862669e04ecc32428e6b6cf324460ca, type: 3}
+  countdownDuration: 10.5
+  audioClip: {fileID: 8300000, guid: da3edacc3229de348b514293f575b260, type: 3}
 --- !u!82 &927856793
 AudioSource:
   m_ObjectHideFlags: 0
