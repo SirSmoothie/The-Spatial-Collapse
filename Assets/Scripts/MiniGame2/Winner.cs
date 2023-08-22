@@ -7,29 +7,21 @@ using TMPro;
 
 public class Winner : MonoBehaviour
 {
-
     public AudioClip audioClip;
     public AudioSource audioSource;
-
     public Frequency frequencygreen;
     public SineWaveGenerator Sinewavered;
-    
     public float redFrequency;
     public float redAmplitude;
-
     public float greenFrequency;
     public float greenAmplitude;
-
-
     public bool frequencyCorrect = false;
     public bool amplitudeCorrect = false;
-
     public float Timer = 0;
-
     public Slider slider;
-
     private MinigameManager minigameManagerScript;
     private GameObject MinigameManager;
+    bool audioPlayed = false; 
 
     private void Start()
     {
@@ -44,7 +36,7 @@ public class Winner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(redFrequency + 0.01f > greenFrequency && redFrequency - 0.01f < greenFrequency)
+        if (redFrequency + 0.01f > greenFrequency && redFrequency - 0.01f < greenFrequency)
         {
             frequencyCorrect = true;
         }
@@ -62,12 +54,18 @@ public class Winner : MonoBehaviour
             amplitudeCorrect = false;
         }
 
-        if(frequencyCorrect == true && amplitudeCorrect == true)
+        if (frequencyCorrect == true && amplitudeCorrect == true)
         {
             Timer = Timer + Time.deltaTime;
             slider.value = Timer;
-            audioSource.clip = audioClip;
-            audioSource.Play();
+
+            if (!audioPlayed)
+            {
+                audioSource.clip = audioClip;
+                audioSource.Play();
+                audioPlayed = true;
+            }
+
             if (Timer >= 3)
             {
                 minigameManagerScript.NextMinigame(true);
@@ -76,15 +74,13 @@ public class Winner : MonoBehaviour
         else
         {
             Timer = 0;
+            if (audioPlayed)
+            {
+                audioSource.Stop();
+                audioPlayed = false;
+            }
+
         }
-
-
-        //random nymber that got generator
-
-        //find the range from 0.5 min to 0.5 max
-
-
-
     }
 
     public void RedFrequency(float redfreq)
