@@ -13,6 +13,7 @@ public class MouseTracking : MonoBehaviour
     public bool FirstActivation = true;
     public GameObject Wall;
     public GameObject TorchingCube;
+    public GameObject Particles;
     //public Wall_health wall_health;
 
     void Update()
@@ -34,6 +35,7 @@ public class MouseTracking : MonoBehaviour
         if (TorchOn == true)
         {
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            Particles.gameObject.SetActive(true);
 
             if (Physics.Raycast(ray, out hit))
             {
@@ -58,7 +60,10 @@ public class MouseTracking : MonoBehaviour
             }
         }
 
-        
+        if(TorchOn == false) 
+        {
+            Particles.gameObject.SetActive(false);
+        }
        // wall_health = Cube.GetComponent<Wall_health>();
     }
 
