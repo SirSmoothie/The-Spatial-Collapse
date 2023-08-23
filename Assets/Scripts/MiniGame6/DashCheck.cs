@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class DashCheck : MonoBehaviour
 {
+    public GameObject Laser;
     void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.name == "Player")
         {
             collider.gameObject.GetComponent<CharacterSkills>().InDashCheck = true;
+            Laser.SetActive(true);
         }
     }
 
@@ -17,6 +19,7 @@ public class DashCheck : MonoBehaviour
         if (collider.gameObject.name == "Player")
         {
             collider.gameObject.GetComponent<CharacterSkills>().InDashCheck = false;
+            Laser.SetActive(false);
         }
     }
 }
