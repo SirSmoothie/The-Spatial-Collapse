@@ -207,6 +207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Image
       objectReference: {fileID: 0}
+    - target: {fileID: 2954095438874745001, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6549693685100812058, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -551,12 +555,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97fa298163e55094a8f26b239fe4fd43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Floor: {fileID: 3340175685282117964, guid: cff4dac93b2b42f43bdb462d284181e8, type: 3}
+  Floor: {fileID: 940164234587138006, guid: cff4dac93b2b42f43bdb462d284181e8, type: 3}
   Slide: {fileID: 2638027737812680762, guid: c3a846502466df74d8a907dbb6b464f4, type: 3}
   Jump: {fileID: 7353738395996938758, guid: b8b6e9908662e484dafa6322bd347079, type: 3}
   Hide: {fileID: 6011195065514575063, guid: b20e9cbac491d214081b6c8be5beb50d, type: 3}
   Dash: {fileID: 2040174981428834268, guid: 50b0f088f88104346b36733793350182, type: 3}
-  End: {fileID: 8843601927798883633, guid: 735251e828a36af4bb10282422131cb6, type: 3}
+  End: {fileID: 6645457069634578959, guid: 735251e828a36af4bb10282422131cb6, type: 3}
   _spawnPosition: {x: 0, y: 0, z: 0}
   _nextSpawnPosition: {x: 4, y: 0, z: 0}
   MustBeFloor: 10
