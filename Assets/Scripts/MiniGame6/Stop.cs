@@ -24,5 +24,9 @@ public class Stop : MonoBehaviour
             collider.gameObject.GetComponent<Character>().start = false;
             minigameManagerScript.NextMinigame(true);
         }
+        if (collider.gameObject.name == "Background")
+        {
+            collider.gameObject.GetComponent<BackgroundScroller>().start = false;
+        }
     }
 }
