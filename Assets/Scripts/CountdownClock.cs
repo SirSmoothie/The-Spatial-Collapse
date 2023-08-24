@@ -6,13 +6,11 @@ using UnityEngine.UI;
 
 public class CountdownClock : MonoBehaviour
 {
-    public float timeremaining = 10f;
+    public float timeremaining = 20f;
     public TMP_Text CountDown;
     public MinigameManager minigameManager;
     public GameObject SliderRed;
     public Slider slider;
-
-
 
     void Update()
     {
@@ -21,20 +19,13 @@ public class CountdownClock : MonoBehaviour
             timeremaining = timeremaining - Time.deltaTime;
             Debug.Log(timeremaining);
             int Seconds = Mathf.FloorToInt(timeremaining % 60);
-            //CountDown.text = string.Format("{00}", Seconds);
-            slider.value = timeremaining;
-
-  
-            
-
+            slider.value = timeremaining;      
         }
         else
         {
             print("you fail");
             TimerFail();
         }
-
-
     }
 
     public void TimerFail()
