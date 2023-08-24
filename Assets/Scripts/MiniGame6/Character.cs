@@ -13,6 +13,7 @@ public class Character : MonoBehaviour
     public Rigidbody rigidbody;
     public CharacterSkills characterSkills;
     public GameObject Text;
+    public GameObject BackGround;
 
     public float AbilityCoolDown = 1f;
     public float AbilityCoolDownTimer = 0;
@@ -45,15 +46,6 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(start == true)
-        {
-            rigidbody.velocity = new Vector3(x * speed, rigidbody.velocity.y, rigidbody.velocity.z);
-        }
-        if(start == false)
-        {
-            rigidbody.velocity = new Vector3(0, 0, 0);
-        }
-
         if (Input.GetKeyDown("w") && AbilityCoolDownTimer <= 0)
         {
             AbilityCoolDownTimer = AbilityCoolDown;
@@ -83,11 +75,19 @@ public class Character : MonoBehaviour
             Hiding(false);
             Sliding(false);
         }
-        
     }
 
     private void FixedUpdate()
     {
+        if (start == true)
+        {
+            rigidbody.velocity = new Vector3(x * speed, rigidbody.velocity.y, rigidbody.velocity.z);
+        }
+        if (start == false)
+        {
+            rigidbody.velocity = new Vector3(0, 0, 0);
+            BackGround.GetComponent<BackgroundScroller>().start = false;
+        }
         speed = speed + AccelerationFactor;
     }
 }
