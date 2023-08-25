@@ -1,0 +1,2126 @@
+fileFormatVersion: 2
+guid: c8df4faadbfdc9c41bc6b3e8b56fd9c8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310049c86e69c66469ea56d02d184d78
+      internalID: -277331811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 4800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25b019f9afa3454bb2b98d328539539
+      internalID: -1056038998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 4800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fd88a2e474a524b833f859fbcf0b31
+      internalID: -350619746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 4800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704ed3cbe237acb41abad7420ac1174e
+      internalID: -1853176912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b719a2af37e6764ba83d3c4dd8a450e
+      internalID: -1653271239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_5
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237a1491d81dce9448ee368a361f77be
+      internalID: 549171504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_6
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 4800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9913dab4343c87348b2adc1b1ef8c496
+      internalID: 1330841247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa54aca8d69a49e44b726631bb97618a
+      internalID: 591578529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 4400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c733ec8865a6b43bd6333a0c9e3513
+      internalID: -1286623391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_9
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 4400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db19377f574efc347a5d454b8d30d035
+      internalID: -257961913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_10
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 4400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219d5d0fb122c2e4aaffd44933860e61
+      internalID: 121191320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_11
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed1be4ed2a569440a5badaf3026cf16
+      internalID: 492207075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_12
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd0eb0ce5c579049be0e226e86b31cf
+      internalID: -102443258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_13
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 4400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf8c8842a87c694887e6e3c0f894bad
+      internalID: 1270956549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7887a44dd17aba47956f1799122a376
+      internalID: -1531454127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 4000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c197f2aeba06c4cbcd76b4d3080ce9
+      internalID: -696843068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_16
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 4000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ca013bc52781949b489f084c1f4397
+      internalID: 1529429490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_17
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 4000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44423c10f6d27440b3714776fdf4ce7
+      internalID: -6737404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddebfe2135d658647b18c9ec2cf0ceed
+      internalID: -642474477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_19
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490027abaf0ec534bad45819dce0a4a2
+      internalID: 20315172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_20
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 4000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c5e676b24b2904989221f907c66cb8
+      internalID: 1167559259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220f7c7d92a4c5b419e3cb04a8607ebb
+      internalID: -1709867100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fe92795e5472547b84118dc37fb928
+      internalID: 1975597025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_23
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3984768e4c0e6548bd7a1008e188ae0
+      internalID: -261094945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_24
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f870323181691674f8804597bd5681ec
+      internalID: 1947246603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_25
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8515eea12022046a9e5f25e6464c10
+      internalID: 2018636957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_26
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ceaad7bd4b49ea4391ae6bbb539d618
+      internalID: 1118877016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_27
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 3600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e50c7a6b146b14da1c6ea24ea158c9
+      internalID: -1338494310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b55848f020df4149a0fd66a58e9f3e4
+      internalID: 639223264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_29
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e300470ec6d2547befbf6aabc72df3
+      internalID: 1973692341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512175074704b6444ae7ebb071b29f2f
+      internalID: -1736784298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_31
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55aba1a3adcec3f4fa30f3cd76bc8686
+      internalID: -855997881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_32
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a62f69f58480d94fb586485ddf19db2
+      internalID: 74564123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_33
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6483d08d9549b4989e2b733c500671
+      internalID: -1316600328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_34
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 3200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1cff5c67a908441879420d53418322
+      internalID: -743277238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b4b86000c972a4e904980e23fd1960
+      internalID: -391281258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_36
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf62fdd563f5184582a54367dec3977
+      internalID: -402762491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_37
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbc8ced9fc31924d824dc71540563fb
+      internalID: 193372960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_38
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07b965dc84097745b3278678c6428fc
+      internalID: 1958806690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_39
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bcd18b21cbfb443b60b516c212bb7c
+      internalID: 977123568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_40
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051b0084515b98645a9ba285bf9844a2
+      internalID: 1932961007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_41
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec705efcc49c0a41be7590241024a65
+      internalID: 1526228202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a095ad301b92b41852818e9960d812
+      internalID: 849191652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_43
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8214f7de0f44042b5aa577822390d1
+      internalID: -482921479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_44
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29fd1ae2fcebc24fa2e12e6bc0424bb
+      internalID: -1913811080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_45
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67e2935693b23b458e7261a8f87af2d
+      internalID: 766358872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_46
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca32b24dbf1e81c4195ec9e34e9fbdd2
+      internalID: 1556753638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_47
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef34aca4c6deda4b8bbbbdbb6de5b21
+      internalID: -662778643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_48
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76660b3d8d739b74cbd6a5c16eb6970c
+      internalID: -399170919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae07ac8c5f6d19b4cb8d0e193cf27d50
+      internalID: 421015912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_50
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d3267c919db6c4b8ffe342fcff69a0
+      internalID: -802986797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_51
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266e78e397c833a41b0258940fc5a6ae
+      internalID: 1435587694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_52
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b488153264a7de7449d78476346cb52f
+      internalID: -1705729490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_53
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5607b0c885c84c48a681c41c71f2f11
+      internalID: 1359584462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_54
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b8d36df44e63a48aa4dd562b08e6e9
+      internalID: 1648857809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_55
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2000
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febdbcb81aadbb54e9e96befa0ff79d7
+      internalID: -1952294978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2068108799de4b24d89b36c68ff899df
+      internalID: 1956647514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_57
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0440fb9352823614d81940d807b76dfc
+      internalID: 133067084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_58
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9bbd9aa806cc4449311413bdb56c36
+      internalID: 1968811563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_59
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7744e26d63dd029409baa9c0b5d14eda
+      internalID: -1750461394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_60
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94960f309f01f5540889c7c16609d53c
+      internalID: -1139278006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_61
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb161caaa32a3ab40b851e207376f421
+      internalID: 345115702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_62
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1600
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d87e7f53f355984789ed5313aa7c4d4
+      internalID: -1819747568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5040cd66170ed40478cac2ad4cff22b2
+      internalID: -1680433073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_64
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ade66de8bceda4458809625cd20e9e5
+      internalID: -746155742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_65
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65fa01fed111a74a88fafa6f3884144
+      internalID: 1624045236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_66
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a005b52d2bd8bb4785d4ce78c3e5565
+      internalID: 2107436905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_67
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015ea46e9c117504dae29c91a274d7b0
+      internalID: 1043392098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_68
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e94aaf67ebf74046b28b2e8ce4652e8
+      internalID: 433013487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_69
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1200
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f5035dd921f854b92b178d9fb6b7ed
+      internalID: 230700381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611228fafc0e98140990b48300a19fd4
+      internalID: -588731735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_71
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff94fe043771f94095bd253d91fb61c
+      internalID: -842441034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_72
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c10a376d21f7b246a560955775fcf71
+      internalID: 658296163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_73
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab41254b7c9e0a41b30c0cef4841f04
+      internalID: 1549250760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_74
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced63cbef219e8b45b3b30b44b73416a
+      internalID: -1889144530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_75
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0841049dc5da36e449104716850f43ee
+      internalID: 479496704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_76
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 800
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7704d814294ec02449cdcaa417742b29
+      internalID: -882494228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983c608b8a6da094cb22833ca5845798
+      internalID: -677762917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_78
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084ca0b3100fd6545b6680a6e89dc0eb
+      internalID: 1181335766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_79
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291d3bef5f7b0b648921154e0bf0dd85
+      internalID: -1169022273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_80
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1453d5277e8f23341b513c6b64b442ec
+      internalID: 1876524465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_81
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad5785a37a7a894287e1d2424263999
+      internalID: 1621720818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_82
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ecc5043763a4f49bdfe96b5d582d34
+      internalID: 550941293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_83
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 400
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359fde62ab9d41e42b54b6f2b49c05cc
+      internalID: -1681745900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3044631e1e49a00478d7c173157692a9
+      internalID: -739837532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_85
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806485fb3643fe240b00333dad7ea404
+      internalID: -1644133143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_86
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009cbd0a3be925a4f8c1e33ec779abe0
+      internalID: -1732343228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_87
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dc0cddbb515284e876d24a6b99bbf7
+      internalID: 427276425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_88
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7181fcea5cd50ba48ba41d8b0dbf5bb7
+      internalID: 2119281286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_89
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a668ef33672bcd04eb307bfce9326780
+      internalID: -1626050580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigame 1 Tutorial_90
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 480
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50e019d841f99c49af47d2a5cf77215
+      internalID: -1838112164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Minigame 1 Tutorial_0: -277331811
+      Minigame 1 Tutorial_1: -1056038998
+      Minigame 1 Tutorial_10: 121191320
+      Minigame 1 Tutorial_11: 492207075
+      Minigame 1 Tutorial_12: -102443258
+      Minigame 1 Tutorial_13: 1270956549
+      Minigame 1 Tutorial_14: -1531454127
+      Minigame 1 Tutorial_15: -696843068
+      Minigame 1 Tutorial_16: 1529429490
+      Minigame 1 Tutorial_17: -6737404
+      Minigame 1 Tutorial_18: -642474477
+      Minigame 1 Tutorial_19: 20315172
+      Minigame 1 Tutorial_2: -350619746
+      Minigame 1 Tutorial_20: 1167559259
+      Minigame 1 Tutorial_21: -1709867100
+      Minigame 1 Tutorial_22: 1975597025
+      Minigame 1 Tutorial_23: -261094945
+      Minigame 1 Tutorial_24: 1947246603
+      Minigame 1 Tutorial_25: 2018636957
+      Minigame 1 Tutorial_26: 1118877016
+      Minigame 1 Tutorial_27: -1338494310
+      Minigame 1 Tutorial_28: 639223264
+      Minigame 1 Tutorial_29: 1973692341
+      Minigame 1 Tutorial_3: -1853176912
+      Minigame 1 Tutorial_30: -1736784298
+      Minigame 1 Tutorial_31: -855997881
+      Minigame 1 Tutorial_32: 74564123
+      Minigame 1 Tutorial_33: -1316600328
+      Minigame 1 Tutorial_34: -743277238
+      Minigame 1 Tutorial_35: -391281258
+      Minigame 1 Tutorial_36: -402762491
+      Minigame 1 Tutorial_37: 193372960
+      Minigame 1 Tutorial_38: 1958806690
+      Minigame 1 Tutorial_39: 977123568
+      Minigame 1 Tutorial_4: -1653271239
+      Minigame 1 Tutorial_40: 1932961007
+      Minigame 1 Tutorial_41: 1526228202
+      Minigame 1 Tutorial_42: 849191652
+      Minigame 1 Tutorial_43: -482921479
+      Minigame 1 Tutorial_44: -1913811080
+      Minigame 1 Tutorial_45: 766358872
+      Minigame 1 Tutorial_46: 1556753638
+      Minigame 1 Tutorial_47: -662778643
+      Minigame 1 Tutorial_48: -399170919
+      Minigame 1 Tutorial_49: 421015912
+      Minigame 1 Tutorial_5: 549171504
+      Minigame 1 Tutorial_50: -802986797
+      Minigame 1 Tutorial_51: 1435587694
+      Minigame 1 Tutorial_52: -1705729490
+      Minigame 1 Tutorial_53: 1359584462
+      Minigame 1 Tutorial_54: 1648857809
+      Minigame 1 Tutorial_55: -1952294978
+      Minigame 1 Tutorial_56: 1956647514
+      Minigame 1 Tutorial_57: 133067084
+      Minigame 1 Tutorial_58: 1968811563
+      Minigame 1 Tutorial_59: -1750461394
+      Minigame 1 Tutorial_6: 1330841247
+      Minigame 1 Tutorial_60: -1139278006
+      Minigame 1 Tutorial_61: 345115702
+      Minigame 1 Tutorial_62: -1819747568
+      Minigame 1 Tutorial_63: -1680433073
+      Minigame 1 Tutorial_64: -746155742
+      Minigame 1 Tutorial_65: 1624045236
+      Minigame 1 Tutorial_66: 2107436905
+      Minigame 1 Tutorial_67: 1043392098
+      Minigame 1 Tutorial_68: 433013487
+      Minigame 1 Tutorial_69: 230700381
+      Minigame 1 Tutorial_7: 591578529
+      Minigame 1 Tutorial_70: -588731735
+      Minigame 1 Tutorial_71: -842441034
+      Minigame 1 Tutorial_72: 658296163
+      Minigame 1 Tutorial_73: 1549250760
+      Minigame 1 Tutorial_74: -1889144530
+      Minigame 1 Tutorial_75: 479496704
+      Minigame 1 Tutorial_76: -882494228
+      Minigame 1 Tutorial_77: -677762917
+      Minigame 1 Tutorial_78: 1181335766
+      Minigame 1 Tutorial_79: -1169022273
+      Minigame 1 Tutorial_8: -1286623391
+      Minigame 1 Tutorial_80: 1876524465
+      Minigame 1 Tutorial_81: 1621720818
+      Minigame 1 Tutorial_82: 550941293
+      Minigame 1 Tutorial_83: -1681745900
+      Minigame 1 Tutorial_84: -739837532
+      Minigame 1 Tutorial_85: -1644133143
+      Minigame 1 Tutorial_86: -1732343228
+      Minigame 1 Tutorial_87: 427276425
+      Minigame 1 Tutorial_88: 2119281286
+      Minigame 1 Tutorial_89: -1626050580
+      Minigame 1 Tutorial_9: -257961913
+      Minigame 1 Tutorial_90: -1838112164
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

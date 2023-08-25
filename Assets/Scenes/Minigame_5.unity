@@ -682,7 +682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2954095438874745001, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6549693685100812058, guid: 47c6d8a2ea439124d9068174390597aa, type: 3}
       propertyPath: m_Pivot.x
@@ -2788,8 +2788,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 504236354}
-  - {fileID: 723011690}
   - {fileID: 913092272}
+  - {fileID: 723011690}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
