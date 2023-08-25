@@ -27,11 +27,11 @@ public class HideWarning : MonoBehaviour
 
     public void WarningOn()
     {
-        Warning.gameObject.SetActive(false);
+        Warning.gameObject.SetActive(true);
     }
 
     public void WarningOff()
     {
-        Warning.gameObject.SetActive(true);
+        Warning.gameObject.SetActive(false);
     }
 }

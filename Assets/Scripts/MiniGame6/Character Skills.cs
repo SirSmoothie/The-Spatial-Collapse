@@ -14,6 +14,7 @@ public class CharacterSkills : MonoBehaviour
     public bool IsHiding = false;
     public bool IsJumping = false;
 
+    public Animator CharaterAnim;
     public MinigameManager minigameManagerScript;
     public GameObject MinigameManager;
 
@@ -30,7 +31,39 @@ public class CharacterSkills : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(InDashCheck == true)
+        if(IsDashing == true)
+        {
+            CharaterAnim.SetBool("Dashing", true);
+        }
+        else
+        {
+            CharaterAnim.SetBool("Dashing", false);
+        }
+        if (IsSliding == true)
+        {
+            CharaterAnim.SetBool("Sliding", true);
+        }
+        else
+        {
+            CharaterAnim.SetBool("Sliding", false);
+        }
+        if (IsHiding == true)
+        {
+            CharaterAnim.SetBool("Hiding", true);
+        }
+        else
+        {
+            CharaterAnim.SetBool("Hiding", false);
+        }
+        if (IsJumping == true)
+        {
+            CharaterAnim.SetBool("Jumping", true);
+        }
+        else
+        {
+            CharaterAnim.SetBool("Jumping", false);
+        }
+        if (InDashCheck == true)
         {
             if(IsDashing == true)
             {
