@@ -14,9 +14,14 @@ public class CharacterSkills : MonoBehaviour
     public bool IsHiding = false;
     public bool IsJumping = false;
 
+    public bool WasInCheck = false;
+    public bool DidWeTellTheRunningAudioToStart = false;
+
     public Animator CharaterAnim;
     public MinigameManager minigameManagerScript;
     public GameObject MinigameManager;
+
+    public AudioManager audioManager;
 
     private void Start()
     {
@@ -31,6 +36,10 @@ public class CharacterSkills : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(InDashCheck == false && InSlideCheck == false && InHideCheck == false && InJumpCheck == false) 
+        {
+            DidWeTellTheRunningAudioToStart = false;
+        }
         if(IsDashing == true)
         {
             CharaterAnim.SetBool("Dashing", true);
@@ -65,6 +74,12 @@ public class CharacterSkills : MonoBehaviour
         }
         if (InDashCheck == true)
         {
+            if(DidWeTellTheRunningAudioToStart == false)
+            {
+                audioManager.LaserTurret();
+                DidWeTellTheRunningAudioToStart = true;
+            }
+            WasInCheck = true;
             if(IsDashing == true)
             {
                 Debug.Log("DASHING");
@@ -74,6 +89,11 @@ public class CharacterSkills : MonoBehaviour
                 gameObject.GetComponent<Character>().start = false;
                 minigameManagerScript.MinigameSoftFail(true);
             }
+        }
+        if(WasInCheck == true && InDashCheck == false)
+        {
+            audioManager.StopAudioClips();
+            WasInCheck = false;
         }
         if(InSlideCheck == true)
         {
@@ -92,9 +112,19 @@ public class CharacterSkills : MonoBehaviour
             if (IsHiding == true)
             {
                 Debug.Log("HIDING");
+                if (DidWeTellTheRunningAudioToStart == false)
+                {
+                    audioManager.VoiceLineGood();
+                    DidWeTellTheRunningAudioToStart = true;
+                }
             }
             else
             {
+                if (DidWeTellTheRunningAudioToStart == false)
+                {
+                    audioManager.VoiceLineBad();
+                    DidWeTellTheRunningAudioToStart = true;
+                }
                 gameObject.GetComponent<Character>().start = false;
                 minigameManagerScript.MinigameSoftFail(true);
             }
