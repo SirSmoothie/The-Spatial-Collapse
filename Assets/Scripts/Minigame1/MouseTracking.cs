@@ -14,6 +14,10 @@ public class MouseTracking : MonoBehaviour
     public GameObject Wall;
     public GameObject TorchingCube;
     public GameObject Particles;
+    public AudioSource TorchSound;
+    public AudioClip TorchSoundClip;
+    public bool PlayingSound;
+
     //public Wall_health wall_health;
 
     void Update()
@@ -36,6 +40,7 @@ public class MouseTracking : MonoBehaviour
         {
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             Particles.gameObject.SetActive(true);
+            StartSound();
 
             if (Physics.Raycast(ray, out hit))
             {
@@ -63,6 +68,7 @@ public class MouseTracking : MonoBehaviour
         if(TorchOn == false) 
         {
             Particles.gameObject.SetActive(false);
+            StopSound();
         }
        // wall_health = Cube.GetComponent<Wall_health>();
     }
@@ -74,6 +80,23 @@ public class MouseTracking : MonoBehaviour
             cuttingPath.cutting(1);
         }
     }
+    public void StartSound()
+    {        
+        if(PlayingSound == true)
+        {
+            PlayingSound = false;
+            TorchSound.clip = TorchSoundClip;
+            TorchSound.Play();
+        }
+    }
+    public void StopSound() 
+    {
+        PlayingSound = true;
+        TorchSound.Stop();
+    } 
+
+
+
     //public void AddDmg()
     //{
     //    wall_health.AddDmg(1);

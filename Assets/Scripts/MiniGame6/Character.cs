@@ -9,11 +9,13 @@ public class Character : MonoBehaviour
     public float AccelerationFactor = 1f;
 
     public bool start = true;
+    public bool DidWeTellTheRunningAudioToStart = false;
 
     public Rigidbody rigidbody;
     public CharacterSkills characterSkills;
     public GameObject Text;
     public GameObject BackGround;
+    public AudioManager audioManager;
 
     public float AbilityCoolDown = 1f;
     public float AbilityCoolDownTimer = 0;
@@ -49,21 +51,29 @@ public class Character : MonoBehaviour
         if (Input.GetKeyDown("w") && AbilityCoolDownTimer <= 0)
         {
             AbilityCoolDownTimer = AbilityCoolDown;
+            audioManager.Jumping();
+            DidWeTellTheRunningAudioToStart = false;
             Jumping(true);
         }
         if (Input.GetKeyDown("a") && AbilityCoolDownTimer <= 0)
         {
             AbilityCoolDownTimer = AbilityCoolDown;
+            audioManager.Hiding();
+            DidWeTellTheRunningAudioToStart = false;
             Hiding(true);
         }
         if (Input.GetKeyDown("s") && AbilityCoolDownTimer <= 0)
         {
             AbilityCoolDownTimer = AbilityCoolDown;
+            audioManager.Sliding();
+            DidWeTellTheRunningAudioToStart = false;
             Sliding(true);
         }
         if (Input.GetKeyDown("d") && AbilityCoolDownTimer <= 0)
         {
             AbilityCoolDownTimer = AbilityCoolDown;
+            audioManager.Dashing();
+            DidWeTellTheRunningAudioToStart = false;
             Dashing(true);
         }
 
@@ -74,6 +84,12 @@ public class Character : MonoBehaviour
             Jumping(false);
             Hiding(false);
             Sliding(false);
+        }
+
+        if(AbilityCoolDownTimer <= 0 && DidWeTellTheRunningAudioToStart == false)
+        {
+            audioManager.Running();
+            DidWeTellTheRunningAudioToStart = true;
         }
     }
 
