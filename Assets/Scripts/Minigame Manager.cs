@@ -9,9 +9,11 @@ public class MinigameManager : MonoBehaviour
     public bool NextMini = false;
     public Animator transiton;
     public float transitionTime = 1f;
-    private static MinigameManager _current;
-    public static MinigameManager Current { get { return _current; } }
-    private int privateLives = 3;
+    public bool Restarting;
+    public bool StopLooping;
+    public Animator death;
+    public float transitionDeathTimer = 1f;
+    public int LivesLeft;
 
     // Start is called before the first frame update
     //private void Awake()
@@ -45,13 +47,17 @@ public class MinigameManager : MonoBehaviour
     }
 
     //changed it reset for now because we dont want to punish people for not being able to complete a minigame with no tutorial
-    public void MinigameSoftFail(bool gameSoftFail)
+    public void MinigameSoftFail()
     {
-        if (gameSoftFail == true)
+        if(LivesLeft <= 0)
         {
+            HardFail();
+        }
+        else
+        {
+            Restarting = true;
             StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
         }
-
     }
     
     public void MainMenu(bool GoToMainMenu)
@@ -76,4 +82,21 @@ public class MinigameManager : MonoBehaviour
             Application.Quit();
         }
     }
+
+     public void Update()
+    {
+        if(Restarting == true && StopLooping == true)
+        {
+            EventBus.Current.reducePrivateVar();
+            StopLooping = false;
+        }
+
+        LivesLeft = EventBus.Current.ReturnLives();
+    }
+
+    public void HardFail()
+    {
+        StartCoroutine(LoadLevel(14));
+    }
+
 }

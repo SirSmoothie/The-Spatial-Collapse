@@ -28,7 +28,7 @@ public class Game4Controller : MonoBehaviour
         }
         if (friendKilled >= 2)
         {
-            minigameManagerScript.MinigameSoftFail(true);
+            minigameManagerScript.MinigameSoftFail();
         }
     }
 

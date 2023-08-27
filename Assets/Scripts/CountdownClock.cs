@@ -17,7 +17,7 @@ public class CountdownClock : MonoBehaviour
         if(timeremaining >= 0.01)
         {
             timeremaining = timeremaining - Time.deltaTime;
-            Debug.Log(timeremaining);
+            //Debug.Log(timeremaining);
             int Seconds = Mathf.FloorToInt(timeremaining % 60);
             slider.value = timeremaining;      
         }
@@ -30,6 +30,6 @@ public class CountdownClock : MonoBehaviour
 
     public void TimerFail()
     {
-        minigameManager.MinigameSoftFail(true);
+        minigameManager.MinigameSoftFail();
     }
 }
