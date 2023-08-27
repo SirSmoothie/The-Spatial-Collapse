@@ -12,6 +12,7 @@ public class ShootingController : MonoBehaviour
     public TargetController targetController;
     public FriendlyController friendlyController;
     public Game4Controller game4Controller;
+    public AudioManager2 audioManager2;
     // Update is called once per frame
     void Update()
     {
@@ -21,7 +22,8 @@ public class ShootingController : MonoBehaviour
             // Create a ray from the camera to the mouse position
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            
+            audioManager2.Gun();
+
             if (Physics.Raycast(ray, out hit))
             {
                 // Check if the raycast hit an enemy
@@ -44,6 +46,7 @@ public class ShootingController : MonoBehaviour
                     // Deal damage to the enemy
                     targetController.EnemyDamage(damage);
                     game4Controller.EnemyKilled(1);
+                    audioManager2.Dead();
                 }
 
             }
