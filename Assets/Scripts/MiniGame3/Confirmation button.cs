@@ -18,6 +18,7 @@ public class Confirmationbutton : MonoBehaviour
 
     public MinigameManager minigameManagerScript;
     public GameObject MinigameManager;
+    public AudioManager2 audioManager2;
 
     private void Start()
     {
@@ -60,12 +61,14 @@ public class Confirmationbutton : MonoBehaviour
                 TestingAligned = false;
                 renderer.material.color = Color.green;
                 greenTimer = true;
+                audioManager2.Yes();
             }
             else
             {
                 TestingAligned = false;
                 renderer.material.color = Color.red;
                 SetTimer2 = true;
+                audioManager2.No();
             }
         }
         if(greenTimer == true)
