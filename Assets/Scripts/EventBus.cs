@@ -5,11 +5,13 @@ using System;
 
 public class EventBus : MonoBehaviour
 {
+
     
     //^sets and event named youGotMail
     private static EventBus _current;
     public static EventBus Current { get { return _current; } }
     private int privateLives = 3;
+    public MinigameManager Minigame;
 
     private void Awake()
     {
@@ -44,4 +46,10 @@ public class EventBus : MonoBehaviour
     public void lightsGoOnTrigger(){
         lightsGoOn();
     }
+
+    public void ResetLives()
+    {
+        privateLives = 3;
+    }
+    
 }

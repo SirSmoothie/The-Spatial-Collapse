@@ -59,7 +59,7 @@ public class WireScript : MonoBehaviour
                 Line.SetPosition(0, hitInfo.point);
                 //Debug.Log("You lose");
                 hasLost = true;
-                minigame.MinigameSoftFail(true);
+                minigame.MinigameSoftFail();
 
                 // Play the lost sound
                 if (audioSource != null && lostSound != null)

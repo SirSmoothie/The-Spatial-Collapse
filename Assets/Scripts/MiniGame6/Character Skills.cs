@@ -87,7 +87,7 @@ public class CharacterSkills : MonoBehaviour
             else
             {
                 gameObject.GetComponent<Character>().start = false;
-                minigameManagerScript.MinigameSoftFail(true);
+                minigameManagerScript.MinigameSoftFail();
             }
         }
         if(WasInCheck == true && InDashCheck == false)
@@ -104,7 +104,7 @@ public class CharacterSkills : MonoBehaviour
             else
             {
                 gameObject.GetComponent<Character>().start = false;
-                minigameManagerScript.MinigameSoftFail(true);
+                minigameManagerScript.MinigameSoftFail();
             }
         }
         if(InHideCheck == true)
@@ -126,7 +126,7 @@ public class CharacterSkills : MonoBehaviour
                     DidWeTellTheRunningAudioToStart = true;
                 }
                 gameObject.GetComponent<Character>().start = false;
-                minigameManagerScript.MinigameSoftFail(true);
+                minigameManagerScript.MinigameSoftFail();
             }
         }
         if(InJumpCheck == true)
@@ -138,7 +138,7 @@ public class CharacterSkills : MonoBehaviour
             else
             {
                 gameObject.GetComponent<Character>().start = false;
-                minigameManagerScript.MinigameSoftFail(true);
+                minigameManagerScript.MinigameSoftFail();
             }
         }
     }
