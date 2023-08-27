@@ -55,6 +55,7 @@ public class MinigameManager : MonoBehaviour
         }
         else
         {
+            EventBus.Current.reducePrivateVar();
             Restarting = true;
             StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
         }
